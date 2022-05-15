@@ -1,6 +1,6 @@
 # Supersized Svelte REPL
 
-The svelte REPL is really cool, and the MDSveX repl is really cool, and saving mini apps to web3 is really cool, but there is nowhere online where you can do all this stuff in one place -- until now!
+The svelte [REPL](https://svelte.dev/repl) is really cool, and the [MDSVEX](https://mdsvex.com/playground) repl is really cool, and saving mini apps to web3 is really cool, but there is nowhere online where you can do all this stuff in one place -- until now!
 
 Let's make it easier to make and deploy web3 components, mini-apps, and sites to IPFS and Arweave.
 
