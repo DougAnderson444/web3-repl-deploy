@@ -2,27 +2,14 @@
 	import Repl from '@sveltejs/repl';
 	import { onMount } from 'svelte';
 	import IPFSSaver from './IPFSSaver.svelte';
+	import { code_0, code_1, code_2, code_3, code_4 } from './_source';
 
 	// set default, but allow prop to be set too
 	export let components = [
 		{
 			name: 'App',
 			type: 'svx',
-			source:
-				`<scr` +
-				`ipt>
-	let name = 'world';
-</scr` +
-				`ipt>
-
-<h1>Hello {name}!</h1>
-
-<style>
-	h1 {
-		color: red;
-	}
-<\/style>
-`
+			source: code_0
 		}
 	];
 
@@ -52,6 +39,7 @@
 		margin: 0;
 		padding: 0;
 	}
+
 	main {
 		height: 90vh;
 		font-family: monospace;
