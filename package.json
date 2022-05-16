@@ -1,6 +1,6 @@
 {
 	"name": "@douganderson444/web3-repl-deploy",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"scripts": {
 		"dev": "svelte-kit dev --port 3032",
 		"build": "svelte-kit build",
@@ -8,7 +8,8 @@
 		"preview": "svelte-kit preview --port 3033",
 		"prepare": "svelte-kit sync",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. .",
-		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. .",
+		"build:ipfs": "esbuild ./node_modules/ipfs-core --bundle --format=esm --sourcemap --main-fields=browser,module,main --inject:./src/node-globals.js --define:globalThis.process.env.NODE_ENV='\"production\"' --splitting --outdir=./src/modules/ipfs-core"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
@@ -18,7 +19,9 @@
 		"@sveltejs/site-kit": "file:../svelte-sites/packages/site-kit/package",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
-		"svelte": "^3.46.0"
+		"svelte": "^3.46.0",
+		"util": "^0.12.4",
+		"process": "^0.11.10"
 	},
 	"type": "module",
 	"dependencies": {
@@ -26,7 +29,7 @@
 		"@lukeed/uuid": "^2.0.0",
 		"codemirror": "^5.65.3",
 		"cookie": "^0.4.1",
-		"ipfs-browser-global": "^0.0.7",
+		"ipfs-core": "^0.14.3",
 		"marked": "^4.0.15",
 		"svelte-preprocess": "^4.10.6",
 		"yootils": "^0.3.1"
