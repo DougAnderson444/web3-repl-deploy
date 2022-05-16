@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-c43422d8.js",
+    "file": "start-52fb7cc5.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -53,7 +53,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-dc69533f.js",
+    "file": "pages/index.svelte-af42ca07.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -63,10 +63,10 @@
     ],
     "dynamicImports": [
       "../svelte-sites/packages/repl/package/codemirror.js",
-      "src/lib/js/ipfs-saver.js"
+      "src/modules/ipfs-core/ipfs-core.js"
     ],
     "css": [
-      "assets/pages/index.svelte-941a343b.css"
+      "assets/pages/index.svelte-0c25f144.css"
     ],
     "assets": [
       "assets/index.45bb4473.js",
@@ -82,9 +82,9 @@
       "_index-7afc149e.js"
     ]
   },
-  "src/lib/js/ipfs-saver.js": {
-    "file": "chunks/ipfs-saver-010a6ba2.js",
-    "src": "src/lib/js/ipfs-saver.js",
+  "src/modules/ipfs-core/ipfs-core.js": {
+    "file": "chunks/ipfs-core-53fb93ca.js",
+    "src": "src/modules/ipfs-core/ipfs-core.js",
     "isDynamicEntry": true
   },
   "../svelte-sites/packages/repl/package/codemirror.js": {
