@@ -5,10 +5,15 @@ export const getAppSvxCode = ({ token }) => {
 	return code_1;
 };
 export const code_0 = `<script>
-	let name = 'world';
-</script>
+	
+	import { editable } from 'https://cdn.jsdelivr.net/gh/douganderson444/svelte-editable-action@latest/src/lib/editable.js'
+		
+	export let name = 'world';
+<\/script>
 
-<h1>Hello {name}!</h1>
+<div use:editable>
+	<h1>Hello {name}!<\/h1>
+<\/div>
 
 <style>
 	h1 {

@@ -41,7 +41,7 @@
 	}
 
 	main {
-		height: 90vh;
+		height: 80vh;
 		font-family: monospace;
 	}
 </style>

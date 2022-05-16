@@ -1,28 +1,12 @@
 <script>
 	import App from '@douganderson444/web3-repl-deploy';
+	import { code_0 } from '$lib/_source';
 
 	let components = [
 		{
 			name: 'App',
 			type: 'svx',
-			source:
-				`<scr` +
-				`ipt>
-	
-		import { editable } from 'https://cdn.jsdelivr.net/gh/douganderson444/svelte-editable-action@latest/src/lib/editable.js'
-		
-		export let name = 'world';
-</scr` +
-				`ipt>
-
-<h1 use:editable>Hello {name}!</h1>
-
-<style>
-	h1 {
-		color: red;
-	}
-<\/style>
-`
+			source: code_0
 		}
 	];
 </script>
