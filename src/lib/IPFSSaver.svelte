@@ -14,7 +14,7 @@
 	let saveContent;
 
 	const cfUrl = (cid) => `https://${cid?.toV1().toString()}.ipfs.cf-ipfs.com/`;
-	const dwebUrl = (cid) => `https://${cid?.toV1().toString()}.ipfs.dweb.link/`;
+	const dwebUrl = (cid) => `http://${cid?.toV1().toString()}.ipfs.dweb.link/`;
 
 	onMount(async () => {
 		const Saver = await import('./js/ipfs-saver.js');
@@ -27,8 +27,8 @@
 			});
 			await saveResult;
 			// prefetch
-			fetch(cfUrl(saveResult.cid));
-			fetch(dwebUrl(saveResult.cid));
+			// fetch(cfUrl(saveResult.cid));
+			// fetch(dwebUrl(saveResult.cid));
 			// rootCID = saveResult.cid.toV1().toString();
 		};
 	});
