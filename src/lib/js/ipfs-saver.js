@@ -1,36 +1,37 @@
 // IPFS saver
-import IPFS from 'ipfs-browser-global'
-IPFS() // preload before .save() is called
+import IPFS from 'ipfs-browser-global';
+IPFS(); // preload before .save() is called
 
-  const assertIpfs = async () => {
-    if (!ipfs) {
-      await IPFS()
-    } else {
-      await ipfs
-    }    
-  }
+const assertIpfs = async () => {
+	if (!ipfs) {
+		console.log('No ipfs global');
+		await IPFS();
+	} else {
+		console.log('Wait for ipfs global');
+		await ipfs;
+	}
+	console.log('ipfs global loaded');
+};
 
 export default class Saver {
-  // save individual components
-  // save the compiled code page
-  // save the whole rollup
+	// save individual components
+	// save the compiled code page
+	// save the whole rollup
 
-  async save (objectToSave) {
-    // 1. source code components
-    // 2. compiled/bundled results
-    await assertIpfs()
-    return await ipfs.dag.put(objectToSave, { pin: true })
-  }
+	async save(objectToSave) {
+		// 1. source code components
+		// 2. compiled/bundled results
+		await assertIpfs();
+		return await ipfs.dag.put(objectToSave, { pin: true });
+	}
 
-  async add (content){
-    
-    await assertIpfs()
+	async add(content) {
+		await assertIpfs();
 
-    const result = await ipfs.add(content, {
-      pin: true,
-      wrapWithDirectory: true
-    })
-    return result
-  }
-
+		const result = await ipfs.add(content, {
+			pin: true,
+			wrapWithDirectory: true
+		});
+		return result;
+	}
 }
