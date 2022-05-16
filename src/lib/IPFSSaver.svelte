@@ -12,16 +12,42 @@
 	let flyOut = { delay: 100, duration: 750, x: 0, y: height, opacity: 0.5, easing: linear };
 	let saveResult;
 	let saveContent;
+	let ipfsNode;
 
 	const cfUrl = (cid) => `https://${cid?.toV1().toString()}.ipfs.cf-ipfs.com/`;
 	const dwebUrl = (cid) => `http://${cid?.toV1().toString()}.ipfs.dweb.link/`;
 
 	onMount(async () => {
-		const Saver = await import('./js/ipfs-saver.js');
-		const saver = new Saver.default();
+		// In Svelte, a hot module refresh can cause lockfile problems
+		// so we assign the ipfs node to globalThis to avoid lock file issues
+		if (!globalThis.ipfsNode) {
+			// no ipfs saved to globalThis, so load it up
+			console.log('No ipfs global');
+
+			const IPFSmodule = await import('../modules/ipfs-core/ipfs-core.js');
+			const IPFS = IPFSmodule.default;
+			ipfsNode = await IPFS.create();
+			globalThis.ipfsNode = ipfsNode;
+		} else {
+			console.log('Wait for ipfs global');
+			ipfsNode = globalThis.ipfsNode;
+		}
+		console.log('ipfs global loaded', { ipfsNode });
+
+		async function save(objectToSave) {
+			return await ipfsNode.dag.put(objectToSave, { pin: true });
+		}
+
+		async function add(content) {
+			return await ipfsNode.add(content, {
+				pin: true,
+				wrapWithDirectory: true
+			});
+		}
+
 		saveContent = async () => {
 			// console.log('content changed');
-			saveResult = saver.add({
+			saveResult = add({
 				path: path || 'index.html',
 				content: content
 			});
@@ -65,12 +91,6 @@
 </div>
 
 <style>
-	/* .outter {
-		border: none;
-		width: 100%;
-		padding: 20px 30px;
-	} */
-
 	.inner {
 		margin: 1em;
 		overflow: hidden;
