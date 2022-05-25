@@ -17116,10 +17116,15 @@ class IPFSSaver extends SvelteComponent {
   }
 }
 const code_0 = `<script>
-	let name = 'world';
+	
+	import { editable } from 'https://cdn.jsdelivr.net/gh/douganderson444/svelte-editable-action@latest/src/lib/editable.js'
+		
+	export let name = 'world';
 <\/script>
 
-<h1>Hello {name}!</h1>
+<div use:editable>
+	<h1>Hello {name}!</h1>
+</div>
 
 <style>
 	h1 {
@@ -17194,7 +17199,7 @@ function create_fragment$1(ctx) {
       this.h();
     },
     h() {
-      attr(main, "class", "svelte-g9llm2");
+      attr(main, "class", "svelte-1h64qet");
     },
     m(target, anchor) {
       insert_hydration(target, main, anchor);
@@ -17319,27 +17324,7 @@ function create_fragment(ctx) {
   };
 }
 function instance($$self) {
-  let components = [
-    {
-      name: "App",
-      type: "svx",
-      source: `<script>
-	
-		import { editable } from 'https://cdn.jsdelivr.net/gh/douganderson444/svelte-editable-action@latest/src/lib/editable.js'
-		
-		export let name = 'world';
-<\/script>
-
-<h1 use:editable>Hello {name}!</h1>
-
-<style>
-	h1 {
-		color: red;
-	}
-</style>
-`
-    }
-  ];
+  let components = [{ name: "App", type: "svx", source: code_0 }];
   return [components];
 }
 class Routes extends SvelteComponent {
@@ -17349,4 +17334,4 @@ class Routes extends SvelteComponent {
   }
 }
 export { Routes as default };
-//# sourceMappingURL=index.svelte-af42ca07.js.map
+//# sourceMappingURL=index.svelte-cb83262b.js.map

@@ -24,7 +24,7 @@ TODO:
 - added .svx extension for MDSVex files
 - added ayu-dark css theme
 - build the workers as es modules (vite default is iife)
-- tweaked the file types
+- tweaked the file types ({component.name}.{component.type})
 
 ## Dev Notes
 
