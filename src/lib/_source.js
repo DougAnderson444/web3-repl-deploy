@@ -4,22 +4,46 @@ export const getAppSvxCode = ({ token }) => {
 	tokenKey = token;
 	return code_1;
 };
-export const code_0 = `<script>
-	
+export const code_0 = `---
+title: Frontmatter can be used
+author: Doug Anderson (@douganderson444)
+
+---
+
+<script>
 	import { editable } from 'https://cdn.jsdelivr.net/gh/douganderson444/svelte-editable-action@latest/src/lib/editable.js'
 		
-	export let name = 'world';
-<\/script>
+	export let name = 'Darik';
+	let editText = 'Go ahead and edit me'
+</script>
 
-<div use:editable>
-	<h1>Hello {name}!<\/h1>
-<\/div>
+<h1>{title}</h1>
+
+# What can you write {name}?
+
+## Markdown Syntax works
+
+### Make text Smaller by adding #s
+
+<div use:editable on:change={e=>console.log(e)}>
+	{editText}
+</div>
+
+{editText}
+
+_Written by:_
+
+{author}
 
 <style>
 	h1 {
 		color: red;
 	}
-<\/style>
+	
+	h2 {
+		color: blue
+	}
+</style>
 `;
 
 export const code_1 = `---
