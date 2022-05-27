@@ -742,7 +742,7 @@ const components = [
   () => __vitePreload(() => import("./pages/__layout.svelte-a0944042.js"), true ? ["pages/__layout.svelte-a0944042.js","assets/pages/__layout.svelte-55b2c734.css","chunks/index-7afc149e.js"] : void 0),
   () => __vitePreload(() => import("./error.svelte-c29d55e9.js"), true ? ["error.svelte-c29d55e9.js","chunks/index-7afc149e.js"] : void 0),
   () => __vitePreload(() => import("./pages/about.svelte-919ca9bc.js"), true ? ["pages/about.svelte-919ca9bc.js","assets/pages/about.svelte-4db5be0d.css","chunks/index-7afc149e.js"] : void 0),
-  () => __vitePreload(() => import("./pages/index.svelte-cb83262b.js"), true ? ["pages/index.svelte-cb83262b.js","assets/pages/index.svelte-f52f98ff.css","chunks/index-7afc149e.js","chunks/preload-helper-2ca56312.js"] : void 0)
+  () => __vitePreload(() => import("./pages/index.svelte-349ba7f6.js"), true ? ["pages/index.svelte-349ba7f6.js","assets/pages/index.svelte-f52f98ff.css","chunks/index-7afc149e.js","chunks/preload-helper-2ca56312.js"] : void 0)
 ];
 const dictionary = {
   "": [[0, 3], [1]],
@@ -870,7 +870,7 @@ function notifiable_store(value) {
 }
 function create_updated_store() {
   const { set, subscribe } = writable(false);
-  const initial = "1653505119011";
+  const initial = "1653670874488";
   let timeout;
   async function check() {
     clearTimeout(timeout);
@@ -1814,4 +1814,4 @@ async function start({ paths, target, session, route, spa, trailing_slash, hydra
   dispatchEvent(new CustomEvent("sveltekit:start"));
 }
 export { start };
-//# sourceMappingURL=start-c213694a.js.map
+//# sourceMappingURL=start-985c9d06.js.map

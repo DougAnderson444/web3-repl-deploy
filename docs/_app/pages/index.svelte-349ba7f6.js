@@ -17115,20 +17115,44 @@ class IPFSSaver extends SvelteComponent {
     init(this, options, instance$2, create_fragment$2, safe_not_equal, { content: 5, path: 6, rootCID: 7 });
   }
 }
-const code_0 = `<script>
-	
+const code_0 = `---
+title: Frontmatter can be used
+author: Doug Anderson (@douganderson444)
+
+---
+
+<script>
 	import { editable } from 'https://cdn.jsdelivr.net/gh/douganderson444/svelte-editable-action@latest/src/lib/editable.js'
 		
-	export let name = 'world';
+	export let name = 'Darik';
+	let editText = 'Go ahead and edit me'
 <\/script>
 
-<div use:editable>
-	<h1>Hello {name}!</h1>
+<h1>{title}</h1>
+
+# What can you write {name}?
+
+## Markdown Syntax works
+
+### Make text Smaller by adding #s
+
+<div use:editable on:change={e=>console.log(e)}>
+	{editText}
 </div>
+
+{editText}
+
+_Written by:_
+
+{author}
 
 <style>
 	h1 {
 		color: red;
+	}
+	
+	h2 {
+		color: blue
 	}
 </style>
 `;
@@ -17334,4 +17358,4 @@ class Routes extends SvelteComponent {
   }
 }
 export { Routes as default };
-//# sourceMappingURL=index.svelte-cb83262b.js.map
+//# sourceMappingURL=index.svelte-349ba7f6.js.map
