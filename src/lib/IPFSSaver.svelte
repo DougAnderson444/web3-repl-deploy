@@ -5,7 +5,6 @@
 
 	export let content;
 	export let path;
-	export let rootCID;
 
 	let height = '70';
 	let flyIn = { delay: 100, duration: 750, x: 0, y: -height, opacity: 0.5, easing: linear };

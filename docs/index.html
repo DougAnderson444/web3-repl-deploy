@@ -2,150 +2,31 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" href="/web3-repl-deploy/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/web3-repl-deploy/favicon.png" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/web3-repl-deploy/_app/assets/pages/__layout.svelte-55b2c734.css">
-	<link rel="stylesheet" href="/web3-repl-deploy/_app/assets/pages/index.svelte-f52f98ff.css">
-	<link rel="modulepreload" href="/web3-repl-deploy/_app/start-985c9d06.js">
-	<link rel="modulepreload" href="/web3-repl-deploy/_app/chunks/index-7afc149e.js">
-	<link rel="modulepreload" href="/web3-repl-deploy/_app/chunks/preload-helper-2ca56312.js">
-	<link rel="modulepreload" href="/web3-repl-deploy/_app/pages/__layout.svelte-a0944042.js">
-	<link rel="modulepreload" href="/web3-repl-deploy/_app/pages/index.svelte-349ba7f6.js">
+	<link rel="stylesheet" href="/web3-repl-deploy/_app/immutable/assets/pages/__layout.svelte-8c018435.css">
+	<link rel="stylesheet" href="/web3-repl-deploy/_app/immutable/assets/pages/index.svelte-f52f98ff.css">
+	<link rel="modulepreload" href="/web3-repl-deploy/_app/immutable/start-de335672.js">
+	<link rel="modulepreload" href="/web3-repl-deploy/_app/immutable/chunks/index-7afc149e.js">
+	<link rel="modulepreload" href="/web3-repl-deploy/_app/immutable/chunks/preload-helper-42b4c6f2.js">
+	<link rel="modulepreload" href="/web3-repl-deploy/_app/immutable/pages/__layout.svelte-a0944042.js">
+	<link rel="modulepreload" href="/web3-repl-deploy/_app/immutable/pages/index.svelte-cb3acd89.js">
 	</head>
 	<body>
-		<div>
+		
 
 
-<main><main><main class="svelte-1h64qet">
-	
-
-<div class="container svelte-12gl4sr toggleable"><div class="viewport svelte-12gl4sr"><div class="container svelte-pukzai"><div class="pane svelte-pukzai" style="width: 50%;"><section slot="a"><div class="component-selector svelte-l2bxb8">
-</div>
-				<div class="editor-wrapper svelte-m7nlxn"><div class="editor notranslate svelte-m7nlxn" translate="no"><div class="codemirror-container svelte-4wkstb"><textarea readonly class="svelte-4wkstb"></textarea>
-
-	<pre style="position: absolute; left: 0; top: 0" class="svelte-4wkstb"></pre>
-
-		<div style="position: absolute; width: 100%; bottom: 0"><div class="message info svelte-9488n4">loading editor...
-</div></div></div></div>
-
-	<div class="info svelte-m7nlxn"></div></div></section></div>
-
-	<div class="pane svelte-pukzai" style="width: 50%;"><section slot="b" style="height: 100%;"><div class="view-toggle svelte-bo3jvb"><button class="svelte-bo3jvb active">Result</button>
-		<button class="svelte-bo3jvb">JS output</button>
-		<button class="svelte-bo3jvb">CSS output</button>
-		<button class="svelte-bo3jvb">AST output</button></div>
-
-
-<div class="tab-content svelte-bo3jvb visible"><div class="iframe-container svelte-12swy72"><div class="container svelte-pukzai"><div class="pane svelte-pukzai" style="height: 100%;"><section slot="a" class="svelte-160vuma"><div slot="main"><iframe title="Result" sandbox="allow-popups-to-escape-sandbox allow-scripts allow-popups allow-forms allow-pointer-lock allow-top-navigation allow-modals " class="svelte-12swy72" srcdoc=""></iframe></div></section></div>
-
-	<div class="pane svelte-pukzai" style="height: 0%;"><section slot="b" class="svelte-160vuma"><div class="panel-header svelte-160vuma"><h3 class="svelte-160vuma">Console</h3>
-			<div slot="panel-header"><button class="svelte-12swy72">
-				Clear
-			</button></div></div>
-
-		<div class="panel-body svelte-160vuma"><section slot="panel-body"><div class="container"></div></section></div></section></div>
-
-	<div class="vertical divider svelte-pukzai" style="top: calc(100% - 8px)"></div></div>
-
-
-
-	<div class="overlay svelte-12swy72"><div class="message info svelte-9488n4 truncate">loading Svelte compiler...
-</div></div>
-</div></div>
-
-
-<div class="tab-content svelte-bo3jvb"><div class="container svelte-pukzai"><div class="pane svelte-pukzai" style="height: 67%;"><section slot="a" class="svelte-160vuma"><div slot="main" class="svelte-bo3jvb"><div class="codemirror-container svelte-4wkstb"><textarea readonly class="svelte-4wkstb"></textarea>
-
-	<pre style="position: absolute; left: 0; top: 0" class="svelte-4wkstb"></pre>
-
-		<div style="position: absolute; width: 100%; bottom: 0"><div class="message info svelte-9488n4">loading editor...
-</div></div></div></div></section></div>
-
-	<div class="pane svelte-pukzai" style="height: 33%;"><section slot="b" class="svelte-160vuma"><div class="panel-header svelte-160vuma"><h3 class="svelte-160vuma">Compiler options</h3>
-			</div>
-
-		<div class="panel-body svelte-160vuma"><div slot="panel-body" class="svelte-bo3jvb">
-
-
-<div class="options svelte-7lonaj">result = svelte.compile(source, {
-	<div class="option svelte-7lonaj"><span class="key svelte-7lonaj">generate:</span>
-
-		<input id="dom-input" type="radio" value="dom" class="svelte-7lonaj" checked>
-		<label for="dom-input" class="svelte-7lonaj"><span class="string svelte-7lonaj">&quot;dom&quot;</span></label>
-
-		<input id="ssr-input" type="radio" value="ssr" class="svelte-7lonaj">
-		<label for="ssr-input" class="svelte-7lonaj"><span class="string svelte-7lonaj">&quot;ssr&quot;</span>,</label></div>
-
-	<label class="option svelte-7lonaj"><span class="key svelte-7lonaj">dev:</span>
-		<input type="checkbox" class="svelte-1ytpqyc">
-		<span class="boolean svelte-7lonaj">false</span>,
-	</label>
-
-	<label class="option svelte-7lonaj"><span class="key svelte-7lonaj">css:</span>
-		<input type="checkbox" class="svelte-1ytpqyc">
-		<span class="boolean svelte-7lonaj">false</span>,
-	</label>
-
-	<label class="option svelte-7lonaj"><span class="key svelte-7lonaj">hydratable:</span>
-		<input type="checkbox" class="svelte-1ytpqyc">
-		<span class="boolean svelte-7lonaj">false</span>,
-	</label>
-
-	<label class="option svelte-7lonaj"><span class="key svelte-7lonaj">customElement:</span>
-		<input type="checkbox" class="svelte-1ytpqyc">
-		<span class="boolean svelte-7lonaj">false</span>,
-	</label>
-
-	<label class="option svelte-7lonaj"><span class="key svelte-7lonaj">immutable:</span>
-		<input type="checkbox" class="svelte-1ytpqyc">
-		<span class="boolean svelte-7lonaj">false</span>,
-	</label>
-
-	<label class="option svelte-7lonaj"><span class="key svelte-7lonaj">legacy:</span>
-		<input type="checkbox" class="svelte-1ytpqyc">
-		<span class="boolean svelte-7lonaj">false</span></label>
-	});
-</div></div></div></section></div>
-
-	<div class="vertical divider svelte-pukzai" style="top: calc(67% - 8px)"></div></div>
-
-</div>
-
-
-<div class="tab-content svelte-bo3jvb"><div class="codemirror-container svelte-4wkstb"><textarea readonly class="svelte-4wkstb"></textarea>
-
-	<pre style="position: absolute; left: 0; top: 0" class="svelte-4wkstb"></pre>
-
-		<div style="position: absolute; width: 100%; bottom: 0"><div class="message info svelte-9488n4">loading editor...
-</div></div></div></div>
-
-
-<div class="tab-content svelte-bo3jvb">
-		</div>
-
-
-<div class="tab-content svelte-bo3jvb"><iframe title="Markdown" srcdoc="" class="svelte-bo3jvb"></iframe>
-</div></section></div>
-
-	<div class="horizontal divider svelte-pukzai" style="left: calc(50% - 8px)"></div></div>
-
-</div>
-	
-<label class="input-output-toggle svelte-cb58tn"><span style="text-align: right" class="svelte-cb58tn active">input</span>
-	<input type="checkbox" class="svelte-1ytpqyc">
-	<span class="svelte-cb58tn">output</span></label>
-</div>
-</main></main></main>
+<main><main></main></main>
 
 <footer>
 </footer>
 
 
-		<script type="module" data-hydrate="1iv37ik">
-		import { start } from "/web3-repl-deploy/_app/start-985c9d06.js";
+		<script type="module" data-sveltekit-hydrate="8ehduy">
+		import { start } from "/web3-repl-deploy/_app/immutable/start-de335672.js";
 		start({
-			target: document.querySelector('[data-hydrate="1iv37ik"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="8ehduy"]').parentNode,
 			paths: {"base":"/web3-repl-deploy","assets":"/web3-repl-deploy"},
 			session: {},
 			route: true,
@@ -154,14 +35,11 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [
-					import("/web3-repl-deploy/_app/pages/__layout.svelte-a0944042.js"),
-						import("/web3-repl-deploy/_app/pages/index.svelte-349ba7f6.js")
-				],
+				nodes: [0, 3],
 				params: {},
 				routeId: ""
 			}
 		});
-	</script></div>
+	</script>
 	</body>
 </html>
