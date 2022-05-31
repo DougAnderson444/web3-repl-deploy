@@ -14,7 +14,7 @@
 	];
 
 	let repl;
-	let code;
+	let compiled;
 
 	onMount(() => {
 		repl.set({
@@ -22,16 +22,20 @@
 		});
 	});
 
-	function handleBundled(e) {
-		code = e.detail;
+	function handleCompiled(e) {
+		({ compiled, components } = e.detail);
 	}
 </script>
 
 <main>
-	{#if code}
-		<IPFSSaver content={code} />
+	{#if components}Components are saved here:
+		<IPFSSaver {repl} content={JSON.stringify(components)} />
 	{/if}
-	<Repl bind:this={repl} showAst on:bundle={handleBundled} />
+
+	{#if compiled}Compiled code is saved here:
+		<IPFSSaver {repl} content={compiled} />
+	{/if}
+	<Repl bind:this={repl} showAst on:compiled={handleCompiled} />
 </main>
 
 <style>
