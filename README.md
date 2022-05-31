@@ -29,3 +29,12 @@ TODO:
 ## Dev Notes
 
 Using the Svelte REPL as a component is a bit tricky, since it has a dependency on svelte-sites workspace. So I forked, clone, and locally edited to work around this issue and bundled it into this package.
+
+### Build Svelte-sites/Repl
+
+To edit the Repl code, open `svelte-sites` ([svelte-sites](https://github.com/DougAnderson444/svelte-sites)) locally, edit, then run:
+
+```cli
+// svelte-sites/packages/repl/
+npm run package
+```
