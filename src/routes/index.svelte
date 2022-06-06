@@ -33,8 +33,6 @@
 	}
 </script>
 
-<main>
-	{#if components}
-		<App bind:components />
-	{/if}
-</main>
+{#if components}
+	<App bind:components />
+{/if}

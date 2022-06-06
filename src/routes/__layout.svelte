@@ -6,20 +6,19 @@
 
 <main>
 	<slot />
+
+	<footer>
+		<p>visit <a href="https://peerpiper.io">PeerPiper.io</a> to learn more about PeerPiper</p>
+	</footer>
 </main>
 
-<footer>
-	<!-- <p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p> -->
-</footer>
-
 <style>
-	/* main {
-		flex: 1;
+	main {
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
 		width: 100%;
-		max-width: 1024px;
+		height: 100vh;
+		max-width: 1824px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -29,7 +28,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 40px;
+		padding: 8px;
 	}
 
 	footer a {
@@ -38,7 +37,7 @@
 
 	@media (min-width: 480px) {
 		footer {
-			padding: 40px 0;
+			padding: 8px 0;
 		}
-	} */
+	}
 </style>
