@@ -71,7 +71,7 @@
 </script>
 
 <div class="inner" style:height="{height * 2}px">
-	{#if !globalThis.ipfsNode}
+	{#if !ipfsNode}
 		Loading IPFS, please wait...
 	{/if}
 	{#if compiled}
