@@ -1,7 +1,9 @@
-var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
+import { commonjsGlobal } from "./index-c4d892ec.js";
+import "./index-7afc149e.js";
+import "./preload-helper-42b4c6f2.js";
 var codemirror$1 = { exports: {} };
 (function(module, exports) {
-  (function(global2, factory) {
+  (function(global, factory) {
     module.exports = factory();
   })(commonjsGlobal, function() {
     var userAgent = navigator.userAgent;
@@ -198,12 +200,12 @@ var codemirror$1 = { exports: {} };
       this.time = 0;
       this.handler = bind(this.onTimeout, this);
     };
-    Delayed.prototype.onTimeout = function(self2) {
-      self2.id = 0;
-      if (self2.time <= +new Date()) {
-        self2.f();
+    Delayed.prototype.onTimeout = function(self) {
+      self.id = 0;
+      if (self.time <= +new Date()) {
+        self.f();
       } else {
-        setTimeout(self2.handler, self2.time - +new Date());
+        setTimeout(self.handler, self.time - +new Date());
       }
     };
     Delayed.prototype.set = function(ms, f) {
@@ -16429,43 +16431,43 @@ var xmlFold = { exports: {} };
     CodeMirror2.defineExtension("lineComment", function(from, to, options) {
       if (!options)
         options = noOptions;
-      var self2 = this, mode = getMode(self2, from);
-      var firstLine = self2.getLine(from.line);
-      if (firstLine == null || probablyInsideString(self2, from, firstLine))
+      var self = this, mode = getMode(self, from);
+      var firstLine = self.getLine(from.line);
+      if (firstLine == null || probablyInsideString(self, from, firstLine))
         return;
       var commentString = options.lineComment || mode.lineComment;
       if (!commentString) {
         if (options.blockCommentStart || mode.blockCommentStart) {
           options.fullLines = true;
-          self2.blockComment(from, to, options);
+          self.blockComment(from, to, options);
         }
         return;
       }
-      var end = Math.min(to.ch != 0 || to.line == from.line ? to.line + 1 : to.line, self2.lastLine() + 1);
+      var end = Math.min(to.ch != 0 || to.line == from.line ? to.line + 1 : to.line, self.lastLine() + 1);
       var pad = options.padding == null ? " " : options.padding;
       var blankLines = options.commentBlankLines || from.line == to.line;
-      self2.operation(function() {
+      self.operation(function() {
         if (options.indent) {
           var baseString = null;
           for (var i = from.line; i < end; ++i) {
-            var line = self2.getLine(i);
+            var line = self.getLine(i);
             var whitespace = line.slice(0, firstNonWS(line));
             if (baseString == null || baseString.length > whitespace.length) {
               baseString = whitespace;
             }
           }
           for (var i = from.line; i < end; ++i) {
-            var line = self2.getLine(i), cut = baseString.length;
+            var line = self.getLine(i), cut = baseString.length;
             if (!blankLines && !nonWS.test(line))
               continue;
             if (line.slice(0, cut) != baseString)
               cut = firstNonWS(line);
-            self2.replaceRange(baseString + commentString + pad, Pos(i, 0), Pos(i, cut));
+            self.replaceRange(baseString + commentString + pad, Pos(i, 0), Pos(i, cut));
           }
         } else {
           for (var i = from.line; i < end; ++i) {
-            if (blankLines || nonWS.test(self2.getLine(i)))
-              self2.replaceRange(commentString + pad, Pos(i, 0));
+            if (blankLines || nonWS.test(self.getLine(i)))
+              self.replaceRange(commentString + pad, Pos(i, 0));
           }
         }
       });
@@ -16473,56 +16475,56 @@ var xmlFold = { exports: {} };
     CodeMirror2.defineExtension("blockComment", function(from, to, options) {
       if (!options)
         options = noOptions;
-      var self2 = this, mode = getMode(self2, from);
+      var self = this, mode = getMode(self, from);
       var startString = options.blockCommentStart || mode.blockCommentStart;
       var endString = options.blockCommentEnd || mode.blockCommentEnd;
       if (!startString || !endString) {
         if ((options.lineComment || mode.lineComment) && options.fullLines != false)
-          self2.lineComment(from, to, options);
+          self.lineComment(from, to, options);
         return;
       }
-      if (/\bcomment\b/.test(self2.getTokenTypeAt(Pos(from.line, 0))))
+      if (/\bcomment\b/.test(self.getTokenTypeAt(Pos(from.line, 0))))
         return;
-      var end = Math.min(to.line, self2.lastLine());
-      if (end != from.line && to.ch == 0 && nonWS.test(self2.getLine(end)))
+      var end = Math.min(to.line, self.lastLine());
+      if (end != from.line && to.ch == 0 && nonWS.test(self.getLine(end)))
         --end;
       var pad = options.padding == null ? " " : options.padding;
       if (from.line > end)
         return;
-      self2.operation(function() {
+      self.operation(function() {
         if (options.fullLines != false) {
-          var lastLineHasText = nonWS.test(self2.getLine(end));
-          self2.replaceRange(pad + endString, Pos(end));
-          self2.replaceRange(startString + pad, Pos(from.line, 0));
+          var lastLineHasText = nonWS.test(self.getLine(end));
+          self.replaceRange(pad + endString, Pos(end));
+          self.replaceRange(startString + pad, Pos(from.line, 0));
           var lead = options.blockCommentLead || mode.blockCommentLead;
           if (lead != null) {
             for (var i = from.line + 1; i <= end; ++i)
               if (i != end || lastLineHasText)
-                self2.replaceRange(lead + pad, Pos(i, 0));
+                self.replaceRange(lead + pad, Pos(i, 0));
           }
         } else {
-          var atCursor = cmp(self2.getCursor("to"), to) == 0, empty = !self2.somethingSelected();
-          self2.replaceRange(endString, to);
+          var atCursor = cmp(self.getCursor("to"), to) == 0, empty = !self.somethingSelected();
+          self.replaceRange(endString, to);
           if (atCursor)
-            self2.setSelection(empty ? to : self2.getCursor("from"), to);
-          self2.replaceRange(startString, from);
+            self.setSelection(empty ? to : self.getCursor("from"), to);
+          self.replaceRange(startString, from);
         }
       });
     });
     CodeMirror2.defineExtension("uncomment", function(from, to, options) {
       if (!options)
         options = noOptions;
-      var self2 = this, mode = getMode(self2, from);
-      var end = Math.min(to.ch != 0 || to.line == from.line ? to.line : to.line - 1, self2.lastLine()), start = Math.min(from.line, end);
+      var self = this, mode = getMode(self, from);
+      var end = Math.min(to.ch != 0 || to.line == from.line ? to.line : to.line - 1, self.lastLine()), start = Math.min(from.line, end);
       var lineString = options.lineComment || mode.lineComment, lines = [];
       var pad = options.padding == null ? " " : options.padding, didSomething;
       lineComment: {
         if (!lineString)
           break lineComment;
         for (var i = start; i <= end; ++i) {
-          var line = self2.getLine(i);
+          var line = self.getLine(i);
           var found = line.indexOf(lineString);
-          if (found > -1 && !/comment/.test(self2.getTokenTypeAt(Pos(i, found + 1))))
+          if (found > -1 && !/comment/.test(self.getTokenTypeAt(Pos(i, found + 1))))
             found = -1;
           if (found == -1 && nonWS.test(line))
             break lineComment;
@@ -16530,7 +16532,7 @@ var xmlFold = { exports: {} };
             break lineComment;
           lines.push(line);
         }
-        self2.operation(function() {
+        self.operation(function() {
           for (var i2 = start; i2 <= end; ++i2) {
             var line2 = lines[i2 - start];
             var pos = line2.indexOf(lineString), endPos = pos + lineString.length;
@@ -16539,7 +16541,7 @@ var xmlFold = { exports: {} };
             if (line2.slice(endPos, endPos + pad.length) == pad)
               endPos += pad.length;
             didSomething = true;
-            self2.replaceRange("", Pos(i2, pos), Pos(i2, endPos));
+            self.replaceRange("", Pos(i2, pos), Pos(i2, endPos));
           }
         });
         if (didSomething)
@@ -16550,13 +16552,13 @@ var xmlFold = { exports: {} };
       if (!startString || !endString)
         return false;
       var lead = options.blockCommentLead || mode.blockCommentLead;
-      var startLine = self2.getLine(start), open = startLine.indexOf(startString);
+      var startLine = self.getLine(start), open = startLine.indexOf(startString);
       if (open == -1)
         return false;
-      var endLine = end == start ? startLine : self2.getLine(end);
+      var endLine = end == start ? startLine : self.getLine(end);
       var close = endLine.indexOf(endString, end == start ? open + startString.length : 0);
       var insideStart = Pos(start, open + 1), insideEnd = Pos(end, close + 1);
-      if (close == -1 || !/comment/.test(self2.getTokenTypeAt(insideStart)) || !/comment/.test(self2.getTokenTypeAt(insideEnd)) || self2.getRange(insideStart, insideEnd, "\n").indexOf(endString) > -1)
+      if (close == -1 || !/comment/.test(self.getTokenTypeAt(insideStart)) || !/comment/.test(self.getTokenTypeAt(insideEnd)) || self.getRange(insideStart, insideEnd, "\n").indexOf(endString) > -1)
         return false;
       var lastStart = startLine.lastIndexOf(startString, from.ch);
       var firstEnd = lastStart == -1 ? -1 : startLine.slice(0, from.ch).indexOf(endString, lastStart + startString.length);
@@ -16567,21 +16569,21 @@ var xmlFold = { exports: {} };
       lastStart = firstEnd == -1 || almostLastStart == -1 ? -1 : to.ch + almostLastStart;
       if (firstEnd != -1 && lastStart != -1 && lastStart != to.ch)
         return false;
-      self2.operation(function() {
-        self2.replaceRange("", Pos(end, close - (pad && endLine.slice(close - pad.length, close) == pad ? pad.length : 0)), Pos(end, close + endString.length));
+      self.operation(function() {
+        self.replaceRange("", Pos(end, close - (pad && endLine.slice(close - pad.length, close) == pad ? pad.length : 0)), Pos(end, close + endString.length));
         var openEnd = open + startString.length;
         if (pad && startLine.slice(openEnd, openEnd + pad.length) == pad)
           openEnd += pad.length;
-        self2.replaceRange("", Pos(start, open), Pos(start, openEnd));
+        self.replaceRange("", Pos(start, open), Pos(start, openEnd));
         if (lead)
           for (var i2 = start + 1; i2 <= end; ++i2) {
-            var line2 = self2.getLine(i2), found2 = line2.indexOf(lead);
+            var line2 = self.getLine(i2), found2 = line2.indexOf(lead);
             if (found2 == -1 || nonWS.test(line2.slice(0, found2)))
               continue;
             var foundEnd = found2 + lead.length;
             if (pad && line2.slice(foundEnd, foundEnd + pad.length) == pad)
               foundEnd += pad.length;
-            self2.replaceRange("", Pos(i2, found2), Pos(i2, foundEnd));
+            self.replaceRange("", Pos(i2, found2), Pos(i2, foundEnd));
           }
       });
       return true;
@@ -17159,4 +17161,4 @@ var foldcode = { exports: {} };
   });
 })();
 export { CodeMirror as default };
-//# sourceMappingURL=codemirror-22909a89.js.map
+//# sourceMappingURL=codemirror-9099ae6b.js.map
