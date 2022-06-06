@@ -1,6 +1,6 @@
 {
 	"name": "@douganderson444/web3-repl-deploy",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"scripts": {
 		"dev": "svelte-kit dev --port 3032",
 		"build": "svelte-kit build",
