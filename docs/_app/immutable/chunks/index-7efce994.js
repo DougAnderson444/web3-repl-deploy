@@ -1885,7 +1885,7 @@ function instance$y($$self, $$props, $$invalidate) {
   onMount(() => {
     (async () => {
       if (!CodeMirror) {
-        let mod2 = await __vitePreload(() => import("./codemirror-9099ae6b.js"), true ? ["chunks/codemirror-9099ae6b.js","assets/codemirror-d2c5637d.css","chunks/index-7afc149e.js","chunks/preload-helper-42b4c6f2.js"] : void 0);
+        let mod2 = await __vitePreload(() => import("./codemirror-4e83b95d.js"), true ? ["chunks/codemirror-4e83b95d.js","assets/codemirror-d2c5637d.css","chunks/index-7afc149e.js","chunks/preload-helper-42b4c6f2.js"] : void 0);
         $$invalidate(4, CodeMirror = mod2.default);
       }
       await createEditor(mode || "svelte");
@@ -19338,7 +19338,7 @@ function create_then_block(ctx) {
       t3 = text("Cloudflare");
       t4 = text("] | [");
       a1 = element("a");
-      t5 = text("DWeb.Link ");
+      t5 = text("DWeb.Link\r\n		");
       t6 = text("] (");
       a2 = element("a");
       t7 = text("Gateway?");
@@ -19358,7 +19358,7 @@ function create_then_block(ctx) {
       t4 = claim_text(p_nodes, "] | [");
       a1 = claim_element(p_nodes, "A", { href: true, target: true });
       var a1_nodes = children(a1);
-      t5 = claim_text(a1_nodes, "DWeb.Link ");
+      t5 = claim_text(a1_nodes, "DWeb.Link\r\n		");
       a1_nodes.forEach(detach);
       t6 = claim_text(p_nodes, "] (");
       a2 = claim_element(p_nodes, "A", { href: true, target: true });
@@ -19577,7 +19577,7 @@ function instance$3($$self, $$props, $$invalidate) {
     easing: identity$3
   };
   const cfUrl = (cid) => `https://${cid == null ? void 0 : cid.toV1().toString()}.ipfs.cf-ipfs.com/`;
-  const dwebDag = (cid) => `"https://dweb.link/api/v0/dag/get?arg=${cid == null ? void 0 : cid.toV1().toString()}`;
+  const dwebDag = (cid) => `https://dweb.link/api/v0/dag/get?arg=${cid == null ? void 0 : cid.toV1().toString()}`;
   $$self.$$set = ($$props2) => {
     if ("saveResult" in $$props2)
       $$invalidate(0, saveResult = $$props2.saveResult);
@@ -19707,7 +19707,7 @@ function create_fragment$2(ctx) {
   let t1;
   let style_height = `${ctx[0] * 2}px`;
   let current;
-  let if_block0 = !globalThis.ipfsNode && create_if_block_2();
+  let if_block0 = !ctx[3] && create_if_block_2();
   let if_block1 = ctx[1] && create_if_block_1(ctx);
   let if_block2 = ctx[2] && create_if_block$2(ctx);
   return {
@@ -19754,6 +19754,18 @@ function create_fragment$2(ctx) {
       current = true;
     },
     p(ctx2, [dirty]) {
+      if (!ctx2[3]) {
+        if (if_block0)
+          ;
+        else {
+          if_block0 = create_if_block_2();
+          if_block0.c();
+          if_block0.m(div, t0);
+        }
+      } else if (if_block0) {
+        if_block0.d(1);
+        if_block0 = null;
+      }
       if (ctx2[1]) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
@@ -19832,11 +19844,11 @@ function instance$2($$self, $$props, $$invalidate) {
       console.log("No ipfs global");
       const IPFSmodule = await __vitePreload(() => import("./ipfs-core-c126b704.js"), true ? [] : void 0);
       const IPFS = IPFSmodule.default;
-      ipfsNode = await IPFS.create();
+      $$invalidate(3, ipfsNode = await IPFS.create());
       globalThis.ipfsNode = ipfsNode;
     } else {
       console.log("Wait for ipfs global");
-      ipfsNode = globalThis.ipfsNode;
+      $$invalidate(3, ipfsNode = globalThis.ipfsNode);
     }
     console.log("ipfs global loaded", { ipfsNode });
     async function save(stringToSave) {
@@ -19847,7 +19859,7 @@ function instance$2($$self, $$props, $$invalidate) {
       const pbNode = { Data: file.marshal(), Links: [] };
       return await ipfsNode.dag.put(pbNode, { storeCodec: "dag-pb", pin: true });
     }
-    $$invalidate(5, saveContent = async () => {
+    $$invalidate(6, saveContent = async () => {
       $$invalidate(1, compiled = save(content.compiled));
       $$invalidate(2, components = save(JSON.stringify(content.components)));
     });
@@ -19859,23 +19871,23 @@ function instance$2($$self, $$props, $$invalidate) {
   });
   $$self.$$set = ($$props2) => {
     if ("content" in $$props2)
-      $$invalidate(3, content = $$props2.content);
+      $$invalidate(4, content = $$props2.content);
     if ("path" in $$props2)
-      $$invalidate(4, path = $$props2.path);
+      $$invalidate(5, path = $$props2.path);
     if ("height" in $$props2)
       $$invalidate(0, height = $$props2.height);
   };
   $$self.$$.update = () => {
-    if ($$self.$$.dirty & 40) {
+    if ($$self.$$.dirty & 80) {
       content && saveContent && saveContent();
     }
   };
-  return [height, compiled, components, content, path, saveContent];
+  return [height, compiled, components, ipfsNode, content, path, saveContent];
 }
 class IPFSSaver extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$2, create_fragment$2, safe_not_equal, { content: 3, path: 4, height: 0 });
+    init(this, options, instance$2, create_fragment$2, safe_not_equal, { content: 4, path: 5, height: 0 });
   }
 }
 const code_0 = `---
@@ -20243,4 +20255,4 @@ class Routes extends SvelteComponent {
   }
 }
 export { Routes, commonjsGlobal };
-//# sourceMappingURL=index-c4d892ec.js.map
+//# sourceMappingURL=index-7efce994.js.map

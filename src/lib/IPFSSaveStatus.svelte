@@ -10,7 +10,7 @@
 
 	const cfUrl = (cid) => `https://${cid?.toV1().toString()}.ipfs.cf-ipfs.com/`;
 	const dwebUrl = (cid) => `http://${cid?.toV1().toString()}.ipfs.dweb.link/`;
-	const dwebDag = (cid) => `"https://dweb.link/api/v0/dag/get?arg=${cid?.toV1().toString()}`;
+	const dwebDag = (cid) => `https://dweb.link/api/v0/dag/get?arg=${cid?.toV1().toString()}`;
 </script>
 
 {#await saveResult}
@@ -21,8 +21,9 @@
 	<p in:fly={flyIn} out:fly={flyOut} style:height="{height}px">
 		✔️ Saved {description} [<a href={cfUrl(result)} target="_blank">Cloudflare</a>] | [<a
 			href={dwebDag(result)}
-			target="_blank">DWeb.Link </a
-		>] (<a href="https://ipfs.github.io/public-gateway-checker/" target="_blank">Gateway?</a>)
+			target="_blank"
+			>DWeb.Link
+		</a>] (<a href="https://ipfs.github.io/public-gateway-checker/" target="_blank">Gateway?</a>)
 	</p>
 {:catch error}
 	<!-- promise was rejected -->
