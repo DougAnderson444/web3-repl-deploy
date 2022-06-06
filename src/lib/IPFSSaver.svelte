@@ -1,20 +1,17 @@
 <script>
 	import { onMount } from 'svelte';
-	import { fly } from 'svelte/transition';
-	import { linear } from 'svelte/easing';
+	import { UnixFS } from 'ipfs-unixfs';
+	import { fromString as uint8ArrayFromString } from 'uint8arrays/from-string';
+	import IPFSSaveStatus from './IPFSSaveStatus.svelte';
 
-	export let content;
-	export let path;
+	export let content = {};
+	export let path = 'index.html';
 
-	let height = '70';
-	let flyIn = { delay: 100, duration: 750, x: 0, y: -height, opacity: 0.5, easing: linear };
-	let flyOut = { delay: 100, duration: 750, x: 0, y: height, opacity: 0.5, easing: linear };
-	let saveResult;
+	export let height = '50';
+
+	let compiled, components;
 	let saveContent;
 	let ipfsNode;
-
-	const cfUrl = (cid) => `https://${cid?.toV1().toString()}.ipfs.cf-ipfs.com/`;
-	const dwebUrl = (cid) => `http://${cid?.toV1().toString()}.ipfs.dweb.link/`;
 
 	onMount(async () => {
 		// In Svelte, a hot module refresh can cause lockfile problems
@@ -33,8 +30,22 @@
 		}
 		console.log('ipfs global loaded', { ipfsNode });
 
-		async function save(objectToSave) {
-			return await ipfsNode.dag.put(objectToSave, { pin: true });
+		async function save(stringToSave) {
+			// if you want dag.put() === ipfs.add(), it needs to be dag-pb
+			const file = new UnixFS({
+				type: 'file',
+				data: uint8ArrayFromString(stringToSave) // new Uint8Array(0) //
+			});
+
+			const pbNode = {
+				Data: file.marshal(),
+				Links: []
+			};
+
+			return await ipfsNode.dag.put(pbNode, {
+				storeCodec: 'dag-pb',
+				pin: true
+			});
 		}
 
 		async function add(content) {
@@ -45,53 +56,37 @@
 		}
 
 		saveContent = async () => {
-			// console.log('content changed');
-			saveResult = add({
-				path: path || 'index.html',
-				content: content
-			});
-			await saveResult;
-			// prefetch
-			// fetch(cfUrl(saveResult.cid));
-			// fetch(dwebUrl(saveResult.cid));
-			// rootCID = saveResult.cid.toV1().toString();
+			compiled = save(content.compiled); // string // await add({ path, content: content.compiled });
+			components = save(JSON.stringify(content.components)); // array // await add({ path, content: content.components }); //
+		};
+
+		return () => {
+			console.log('the ipfs node is being stopped');
+			ipfsNode.stop();
+			globalThis.ipfsNode = null;
 		};
 	});
 
 	$: content && saveContent && saveContent();
 </script>
 
-<div class="inner" style:height="{height}px" style="--height: {height}px">
-	{#if saveResult}
-		{#await saveResult}
-			<!-- promise is pending -->
-			<p in:fly={flyIn} out:fly={flyOut} style:height="{height}px">Loading IPFS...</p>
-		{:then result}
-			<!-- promise was fulfilled -->
-			<p in:fly={flyIn} out:fly={flyOut} style:height="{height}px">
-				✔️ <a href={cfUrl(result.cid)} target="_blank"
-					>CloudFlare Gateway {result.cid.toV1().toString()}</a
-				><br />
-				<!-- <a href="https://dweb.link/api/v0/dag/get?arg={rootCID}"
-						target="_blank" >
-						{rootCID}</a> -->
-				✔️
-				<a href={dwebUrl(result.cid)} target="_blank">
-					DWeb.Link (Backup) {result.cid.toV1().toString()}
-				</a>
-				(Public
-				<a href="https://ipfs.github.io/public-gateway-checker/" target="_blank">Gateway</a>)
-			</p>
-		{:catch error}
-			<!-- promise was rejected -->
-			<p in:fly={flyIn} out:fly={flyOut}>Something went wrong: {error.message}</p>
-		{/await}
+<div class="inner" style:height="{height * 2}px">
+	{#if !globalThis.ipfsNode}
+		Loading IPFS, please wait...
+	{/if}
+	{#if compiled}
+		<IPFSSaveStatus saveResult={compiled} {height} description={'Compiled Mini-App'} />
+	{/if}
+	{#if components}<IPFSSaveStatus
+			saveResult={components}
+			{height}
+			description={'Editable Components'}
+		/>
 	{/if}
 </div>
 
 <style>
 	.inner {
-		margin: 1em;
 		overflow: hidden;
 		max-height: var(--height);
 	}
