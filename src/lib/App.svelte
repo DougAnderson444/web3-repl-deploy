@@ -23,29 +23,47 @@
 	});
 
 	function handleCompiled(e) {
+		// components is an array
+		// compiled is a string...
 		({ compiled, components } = e.detail);
 	}
 </script>
 
-<main>
-	{#if components}Components are saved here:
-		<IPFSSaver {repl} content={JSON.stringify(components)} />
-	{/if}
-
-	{#if compiled}Compiled code is saved here:
-		<IPFSSaver {repl} content={compiled} />
-	{/if}
-	<Repl bind:this={repl} showAst on:compiled={handleCompiled} />
-</main>
+<div class="main">
+	<div class="contain">
+		<div class="top-half">
+			{#if compiled && components}
+				<IPFSSaver {repl} content={{ compiled, components }} />
+			{/if}
+		</div>
+		<div class="bottom-half">
+			<Repl bind:this={repl} on:compiled={handleCompiled} />
+		</div>
+	</div>
+</div>
 
 <style>
-	:global(body) {
-		margin: 0;
-		padding: 0;
+	.main {
+		height: 100%;
+		border: 0px solid rgb(245, 242, 242);
 	}
-
-	main {
-		height: 80vh;
+	.top-half {
+		min-height: min-content;
+	}
+	.bottom-half {
 		font-family: monospace;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		min-height: 200px;
+		border: 0px solid rgb(235, 235, 235);
+	}
+	.contain {
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		/* height: 96vh; */
+		height: 100%;
 	}
 </style>
