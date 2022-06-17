@@ -9,18 +9,22 @@ Let's make it easier to make and deploy web3 components, mini-apps, and sites to
 
 Save/Ship/Deploy to:
 
+- [x] [Local Browser](https://github.com/gruns/ImmortalDB)
 - [x] [IPFS](https://ipfs.io/)
 - [ ] [Arweave](https://www.arweave.org/)
+- [ ] Save to awesome-peerpiper
+- [ ] Lock then save using encryption
 
 Enjoy!
 
-TODO:
+Roadmap:
 
-- [ ] Load from templates / community
+- [x] Load modules from [npm](npmjs.com)
+- [ ] Load from awesome-peerpiper templates / community
 
-## Changelog from the standard [Svelte REPL](https://github.com/DougAnderson444/svelte-sites):
+## Changelog Summary from the standard [Svelte REPL](https://github.com/DougAnderson444/svelte-sites):
 
-[Fork Changelog](https://github.com/DougAnderson444/svelte-sites/tree/master/packages/repl)
+[Latest Fork Changelog](https://github.com/DougAnderson444/svelte-sites/tree/master/packages/repl#fork-changelog-from-the-standard-svelte-repl)
 
 - added mdsvex
 - added .svx extension for MDSVex files
