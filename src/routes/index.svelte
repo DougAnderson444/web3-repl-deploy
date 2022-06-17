@@ -1,6 +1,6 @@
 <script>
 	import App from '@douganderson444/web3-repl-deploy';
-	import { code_0 } from '$lib/_source';
+	import { code_0, code_1 } from '$lib/_source';
 
 	import { onMount } from 'svelte';
 
@@ -22,6 +22,11 @@
 					name: 'App',
 					type: 'svx',
 					source: code_0
+				},
+				{
+					name: 'Changable',
+					type: 'svelte',
+					source: code_1
 				}
 			];
 		}
