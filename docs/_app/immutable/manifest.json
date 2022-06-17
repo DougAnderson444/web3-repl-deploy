@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-62609b5d.js",
+    "file": "start-dd5c399f.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -11,11 +11,11 @@
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
       "src/routes/about.svelte",
-      "_index-7efce994.js"
+      "_index-cee35d39.js"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-bcf893fc.js",
+    "file": "pages/__layout.svelte-7ebda68e.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -23,9 +23,16 @@
       "_index-7afc149e.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-c3f5dd9d.css"
+      "assets/pages/__layout.svelte-ffd7c0cf.css"
     ],
     "assets": [
+      "assets/fira-mono-cyrillic-ext-400-normal-3df7909e.woff2",
+      "assets/fira-mono-all-400-normal-1e3b098c.woff",
+      "assets/fira-mono-cyrillic-400-normal-c7d433fd.woff2",
+      "assets/fira-mono-greek-ext-400-normal-9e2fe623.woff2",
+      "assets/fira-mono-greek-400-normal-a8be01ce.woff2",
+      "assets/fira-mono-latin-ext-400-normal-6bfabd30.woff2",
+      "assets/fira-mono-latin-400-normal-e43b3538.woff2",
       "assets/overpass-latin-300-3782c01a.woff2",
       "assets/overpass-latin-600-0ca25556.woff2",
       "assets/fira-mono-latin-400-8d4e0c52.woff2"
@@ -41,7 +48,7 @@
     ]
   },
   "src/routes/about.svelte": {
-    "file": "pages/about.svelte-919ca9bc.js",
+    "file": "pages/about.svelte-d07e5e5d.js",
     "src": "src/routes/about.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -49,16 +56,16 @@
       "_index-7afc149e.js"
     ],
     "css": [
-      "assets/pages/about.svelte-4db5be0d.css"
+      "assets/pages/about.svelte-bcc3062e.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-a6c0defa.js",
+    "file": "pages/index.svelte-3f38eb07.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
       "_index-7afc149e.js",
-      "_index-7efce994.js",
+      "_index-cee35d39.js",
       "_preload-helper-42b4c6f2.js"
     ]
   },
@@ -71,8 +78,8 @@
       "_index-7afc149e.js"
     ]
   },
-  "_index-7efce994.js": {
-    "file": "chunks/index-7efce994.js",
+  "_index-cee35d39.js": {
+    "file": "chunks/index-cee35d39.js",
     "isDynamicEntry": true,
     "imports": [
       "_index-7afc149e.js",
@@ -83,11 +90,11 @@
       "src/modules/ipfs-core/ipfs-core.js"
     ],
     "css": [
-      "assets/index-7e9e90dd.css"
+      "assets/index-2464a55f.css"
     ],
     "assets": [
-      "assets/index.45bb4473.js",
-      "assets/index.8a3f1b0a.js"
+      "assets/index.90da190f.js",
+      "assets/index.cb693e92.js"
     ]
   },
   "src/modules/ipfs-core/ipfs-core.js": {
@@ -96,16 +103,16 @@
     "isDynamicEntry": true
   },
   "../svelte-sites/packages/repl/package/codemirror.js": {
-    "file": "chunks/codemirror-4e83b95d.js",
+    "file": "chunks/codemirror-c02338e5.js",
     "src": "../svelte-sites/packages/repl/package/codemirror.js",
     "isDynamicEntry": true,
     "imports": [
-      "_index-7efce994.js",
+      "_index-cee35d39.js",
       "_index-7afc149e.js",
       "_preload-helper-42b4c6f2.js"
     ],
     "css": [
-      "assets/codemirror-d2c5637d.css"
+      "assets/codemirror-95b1b861.css"
     ]
   }
 }

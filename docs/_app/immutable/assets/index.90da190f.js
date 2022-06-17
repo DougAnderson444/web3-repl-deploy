@@ -28,7 +28,7 @@ const common_options = {
 };
 function compile({ id, source, options, return_ast }) {
   try {
-    const { js, css, ast } = svelte.compile(source, Object.assign({}, common_options, options));
+    const { js, css, ast } = svelte.compile(source, Object.assign({}, common_options, options, { accessors: true }));
     return {
       id,
       result: {
@@ -56,4 +56,4 @@ ${err.frame}`;
     };
   }
 }
-//# sourceMappingURL=index.67639fda.js.map
+//# sourceMappingURL=index.dc5d0e7c.js.map

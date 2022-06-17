@@ -80,7 +80,7 @@ function create_fragment(ctx) {
       attr(meta, "name", "description");
       attr(meta, "content", "About this app");
       attr(a, "href", "https://kit.svelte.dev");
-      attr(div, "class", "content svelte-cf77e8");
+      attr(div, "class", "content svelte-1sfqw64");
     },
     m(target, anchor) {
       append_hydration(document.head, meta);
@@ -123,4 +123,4 @@ class About extends SvelteComponent {
   }
 }
 export { About as default, hydrate, prerender, router };
-//# sourceMappingURL=about.svelte-919ca9bc.js.map
+//# sourceMappingURL=about.svelte-d07e5e5d.js.map

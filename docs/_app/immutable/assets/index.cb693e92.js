@@ -14446,7 +14446,7 @@ async function get_bundle(uid, mode, cache, lookup) {
         filename: name + ".svelte"
       }, has_loopGuardTimeout_feature() && {
         loopGuardTimeout: 100
-      }));
+      }, { accessors: true }));
       new_cache[id] = { code, result };
       (result.warnings || result.stats.warnings).forEach((warning) => {
         warnings.push({

@@ -1,7 +1,5 @@
 import { SvelteComponent, init, safe_not_equal, create_slot, element, space, text, claim_element, children, claim_space, claim_text, detach, attr, insert_hydration, append_hydration, update_slot_base, get_all_dirty_from_scope, get_slot_changes, transition_in, transition_out } from "../chunks/index-7afc149e.js";
 var app = "";
-var base = "";
-var code = "";
 var __layout_svelte_svelte_type_style_lang = "";
 function create_fragment(ctx) {
   let main;
@@ -52,9 +50,9 @@ function create_fragment(ctx) {
     },
     h() {
       attr(a, "href", "https://peerpiper.io");
-      attr(a, "class", "svelte-xux67t");
-      attr(footer, "class", "svelte-xux67t");
-      attr(main, "class", "svelte-xux67t");
+      attr(a, "class", "svelte-hr1ruq");
+      attr(footer, "class", "svelte-hr1ruq");
+      attr(main, "class", "svelte-hr1ruq");
     },
     m(target, anchor) {
       insert_hydration(target, main, anchor);
@@ -110,4 +108,4 @@ class _layout extends SvelteComponent {
   }
 }
 export { _layout as default };
-//# sourceMappingURL=__layout.svelte-bcf893fc.js.map
+//# sourceMappingURL=__layout.svelte-7ebda68e.js.map

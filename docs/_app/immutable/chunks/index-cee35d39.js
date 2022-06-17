@@ -43,7 +43,7 @@ function create_if_block_1$b(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", div_class_value = ctx[1] + " divider svelte-pukzai");
+      attr(div, "class", div_class_value = ctx[1] + " divider svelte-1rhm6f2");
       attr(div, "style", div_style_value = ctx[8] + ": calc(" + ctx[0] + "% - 8px)");
     },
     m(target, anchor) {
@@ -57,7 +57,7 @@ function create_if_block_1$b(ctx) {
       }
     },
     p(ctx2, dirty) {
-      if (dirty & 2 && div_class_value !== (div_class_value = ctx2[1] + " divider svelte-pukzai")) {
+      if (dirty & 2 && div_class_value !== (div_class_value = ctx2[1] + " divider svelte-1rhm6f2")) {
         attr(div, "class", div_class_value);
       }
       if (dirty & 257 && div_style_value !== (div_style_value = ctx2[8] + ": calc(" + ctx2[0] + "% - 8px)")) {
@@ -85,7 +85,7 @@ function create_if_block$n(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "mousecatcher svelte-pukzai");
+      attr(div, "class", "mousecatcher svelte-1rhm6f2");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -158,11 +158,11 @@ function create_fragment$D(ctx) {
       this.h();
     },
     h() {
-      attr(div0, "class", "pane svelte-pukzai");
+      attr(div0, "class", "pane svelte-1rhm6f2");
       attr(div0, "style", div0_style_value = ctx[7] + ": " + ctx[0] + "%;");
-      attr(div1, "class", "pane svelte-pukzai");
+      attr(div1, "class", "pane svelte-1rhm6f2");
       attr(div1, "style", div1_style_value = ctx[7] + ": " + (100 - ctx[0]) + "%;");
-      attr(div2, "class", "container svelte-pukzai");
+      attr(div2, "class", "container svelte-1rhm6f2");
       add_render_callback(() => ctx[20].call(div2));
     },
     m(target, anchor) {
@@ -432,7 +432,7 @@ function create_fragment$C(ctx) {
     },
     h() {
       attr(input, "type", "checkbox");
-      attr(input, "class", "svelte-1ytpqyc");
+      attr(input, "class", "svelte-7d8p2x");
     },
     m(target, anchor) {
       insert_hydration(target, input, anchor);
@@ -527,11 +527,11 @@ function create_fragment$B(ctx) {
     },
     h() {
       set_style(span0, "text-align", "right");
-      attr(span0, "class", "svelte-cb58tn");
+      attr(span0, "class", "svelte-wpxql0");
       toggle_class(span0, "active", !ctx[0]);
-      attr(span1, "class", "svelte-cb58tn");
+      attr(span1, "class", "svelte-wpxql0");
       toggle_class(span1, "active", ctx[0]);
-      attr(label, "class", "input-output-toggle svelte-cb58tn");
+      attr(label, "class", "input-output-toggle svelte-wpxql0");
     },
     m(target, anchor) {
       insert_hydration(target, label, anchor);
@@ -679,10 +679,10 @@ function create_if_block$m(ctx) {
       attr(svg, "width", "12");
       attr(svg, "height", "12");
       attr(svg, "viewBox", "0 0 24 24");
-      attr(svg, "class", "svelte-l2bxb8");
-      attr(button, "class", "add-new svelte-l2bxb8");
+      attr(svg, "class", "svelte-npccba");
+      attr(button, "class", "add-new svelte-npccba");
       attr(button, "title", "add new component");
-      attr(div, "class", "file-tabs svelte-l2bxb8");
+      attr(div, "class", "file-tabs svelte-npccba");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -807,7 +807,7 @@ function create_else_block$d(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "editable svelte-l2bxb8");
+      attr(div, "class", "editable svelte-npccba");
       attr(div, "title", "edit component name");
       attr(line0, "stroke", "#999");
       attr(line0, "x1", "18");
@@ -822,8 +822,8 @@ function create_else_block$d(ctx) {
       attr(svg, "width", "12");
       attr(svg, "height", "12");
       attr(svg, "viewBox", "0 0 24 24");
-      attr(svg, "class", "svelte-l2bxb8");
-      attr(span, "class", "remove svelte-l2bxb8");
+      attr(svg, "class", "svelte-npccba");
+      attr(span, "class", "remove svelte-npccba");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -904,10 +904,10 @@ function create_if_block_3$6(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "input-sizer svelte-l2bxb8");
+      attr(span, "class", "input-sizer svelte-npccba");
       input.autofocus = true;
       attr(input, "spellcheck", false);
-      attr(input, "class", "svelte-l2bxb8");
+      attr(input, "class", "svelte-npccba");
       toggle_class(input, "duplicate", ctx[12](ctx[2]));
     },
     m(target, anchor) {
@@ -975,7 +975,7 @@ function create_if_block_1$a(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "uneditable svelte-l2bxb8");
+      attr(div, "class", "uneditable svelte-npccba");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -1088,9 +1088,9 @@ function create_each_block$8(ctx) {
       this.h();
     },
     h() {
-      attr(i2, "class", "drag-handle svelte-l2bxb8");
+      attr(i2, "class", "drag-handle svelte-npccba");
       attr(div, "id", div_id_value = ctx[28].name);
-      attr(div, "class", "button svelte-l2bxb8");
+      attr(div, "class", "button svelte-npccba");
       attr(div, "role", "button");
       attr(div, "draggable", div_draggable_value = ctx[28] !== ctx[2]);
       toggle_class(div, "active", ctx[28] === ctx[5]);
@@ -1170,7 +1170,7 @@ function create_fragment$A(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "component-selector svelte-l2bxb8");
+      attr(div, "class", "component-selector svelte-npccba");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -1443,7 +1443,7 @@ function create_if_block$l(ctx) {
       this.h();
     },
     h() {
-      attr(p, "class", "svelte-9488n4");
+      attr(p, "class", "svelte-h6ifpw");
       toggle_class(p, "navigable", ctx[1].filename);
     },
     m(target, anchor) {
@@ -1501,7 +1501,7 @@ function create_fragment$z(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", div_class_value = "message " + ctx[0] + " svelte-9488n4");
+      attr(div, "class", div_class_value = "message " + ctx[0] + " svelte-h6ifpw");
       toggle_class(div, "truncate", ctx[2]);
     },
     m(target, anchor) {
@@ -1530,7 +1530,7 @@ function create_fragment$z(ctx) {
         transition_in(if_block, 1);
         if_block.m(div, null);
       }
-      if (!current || dirty & 1 && div_class_value !== (div_class_value = "message " + ctx2[0] + " svelte-9488n4")) {
+      if (!current || dirty & 1 && div_class_value !== (div_class_value = "message " + ctx2[0] + " svelte-h6ifpw")) {
         attr(div, "class", div_class_value);
       }
       if (dirty & 5) {
@@ -1657,7 +1657,7 @@ function create_if_block$k(ctx) {
       set_style(pre, "position", "absolute");
       set_style(pre, "left", "0");
       set_style(pre, "top", "0");
-      attr(pre, "class", "svelte-4wkstb");
+      attr(pre, "class", "svelte-1jjwxbp");
       set_style(div, "position", "absolute");
       set_style(div, "width", "100%");
       set_style(div, "bottom", "0");
@@ -1748,8 +1748,8 @@ function create_fragment$y(ctx) {
     h() {
       textarea.readOnly = true;
       textarea.value = ctx[2];
-      attr(textarea, "class", "svelte-4wkstb");
-      attr(div, "class", "codemirror-container svelte-4wkstb");
+      attr(textarea, "class", "svelte-1jjwxbp");
+      attr(div, "class", "codemirror-container svelte-1jjwxbp");
       add_render_callback(() => ctx[26].call(div));
     },
     m(target, anchor) {
@@ -1885,7 +1885,7 @@ function instance$y($$self, $$props, $$invalidate) {
   onMount(() => {
     (async () => {
       if (!CodeMirror) {
-        let mod2 = await __vitePreload(() => import("./codemirror-4e83b95d.js"), true ? ["chunks/codemirror-4e83b95d.js","assets/codemirror-d2c5637d.css","chunks/index-7afc149e.js","chunks/preload-helper-42b4c6f2.js"] : void 0);
+        let mod2 = await __vitePreload(() => import("./codemirror-c02338e5.js"), true ? ["chunks/codemirror-c02338e5.js","assets/codemirror-95b1b861.css","chunks/index-7afc149e.js","chunks/preload-helper-42b4c6f2.js"] : void 0);
         $$invalidate(4, CodeMirror = mod2.default);
       }
       await createEditor(mode || "svelte");
@@ -2322,10 +2322,10 @@ function create_fragment$x(ctx) {
       this.h();
     },
     h() {
-      attr(div0, "class", "editor notranslate svelte-m7nlxn");
+      attr(div0, "class", "editor notranslate svelte-gasvj3");
       attr(div0, "translate", "no");
-      attr(div1, "class", "info svelte-m7nlxn");
-      attr(div2, "class", "editor-wrapper svelte-m7nlxn");
+      attr(div1, "class", "info svelte-gasvj3");
+      attr(div2, "class", "editor-wrapper svelte-gasvj3");
     },
     m(target, anchor) {
       insert_hydration(target, div2, anchor);
@@ -4653,7 +4653,7 @@ function create_a_slot$1(ctx) {
     },
     h() {
       attr(section, "slot", "a");
-      attr(section, "class", "svelte-160vuma");
+      attr(section, "class", "svelte-425s3a");
     },
     m(target, anchor) {
       insert_hydration(target, section, anchor);
@@ -4740,11 +4740,11 @@ function create_b_slot$1(ctx) {
       this.h();
     },
     h() {
-      attr(h3, "class", "svelte-160vuma");
-      attr(div0, "class", "panel-header svelte-160vuma");
-      attr(div1, "class", "panel-body svelte-160vuma");
+      attr(h3, "class", "svelte-425s3a");
+      attr(div0, "class", "panel-header svelte-425s3a");
+      attr(div1, "class", "panel-body svelte-425s3a");
       attr(section, "slot", "b");
-      attr(section, "class", "svelte-160vuma");
+      attr(section, "class", "svelte-425s3a");
     },
     m(target, anchor) {
       insert_hydration(target, section, anchor);
@@ -5035,9 +5035,9 @@ function create_if_block$i(ctx) {
       this.h();
     },
     h() {
-      attr(span0, "class", "arrow svelte-1qd6nto");
+      attr(span0, "class", "arrow svelte-1ixkmlj");
       toggle_class(span0, "expanded", ctx[2]);
-      attr(span1, "class", "container svelte-1qd6nto");
+      attr(span1, "class", "container svelte-1ixkmlj");
     },
     m(target, anchor) {
       insert_hydration(target, span1, anchor);
@@ -5321,7 +5321,7 @@ function create_else_block$b(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "root svelte-19drypg");
+      attr(span, "class", "root svelte-12p8n9c");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -5673,7 +5673,7 @@ function create_default_slot$3(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "label svelte-19drypg");
+      attr(span, "class", "label svelte-12p8n9c");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -5780,7 +5780,7 @@ function create_each_block$6(ctx) {
       this.h();
     },
     h() {
-      attr(li, "class", "svelte-19drypg");
+      attr(li, "class", "svelte-12p8n9c");
       toggle_class(li, "indent", ctx[4]);
     },
     m(target, anchor) {
@@ -6070,7 +6070,7 @@ function create_if_block_2$7(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "comma operator svelte-150ffaa");
+      attr(span, "class", "comma operator svelte-1mvdjda");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -6185,7 +6185,7 @@ function create_if_block_1$7(ctx) {
       this.h();
     },
     h() {
-      attr(span0, "class", "comma operator svelte-150ffaa");
+      attr(span0, "class", "comma operator svelte-1mvdjda");
       attr(span1, "class", "operator");
     },
     m(target, anchor) {
@@ -8304,7 +8304,7 @@ function create_fragment$m(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", span_class_value = null_to_empty(ctx[1]) + " svelte-l95iub");
+      attr(span, "class", span_class_value = null_to_empty(ctx[1]) + " svelte-qj9jjj");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -8313,7 +8313,7 @@ function create_fragment$m(ctx) {
     p(ctx2, [dirty]) {
       if (dirty & 1)
         set_data(t, ctx2[0]);
-      if (dirty & 2 && span_class_value !== (span_class_value = null_to_empty(ctx2[1]) + " svelte-l95iub")) {
+      if (dirty & 2 && span_class_value !== (span_class_value = null_to_empty(ctx2[1]) + " svelte-qj9jjj")) {
         attr(span, "class", span_class_value);
       }
     },
@@ -8508,7 +8508,7 @@ function create_each_block$4(ctx) {
     },
     h() {
       attr(span0, "class", "operator");
-      attr(span1, "class", "svelte-1u08yw6");
+      attr(span1, "class", "svelte-ikwvbe");
       toggle_class(span1, "indent", ctx[9] > 0);
     },
     m(target, anchor) {
@@ -9005,7 +9005,7 @@ function create_else_block$6(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "svelte-1fvwa9c");
+      attr(span, "class", "svelte-12cz4sc");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -9047,7 +9047,7 @@ function create_if_block$b(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "svelte-1fvwa9c");
+      attr(span, "class", "svelte-12cz4sc");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -9139,7 +9139,7 @@ function create_summary_slot$3(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "i svelte-1eamqdt");
+      attr(span, "class", "i svelte-9b7t4d");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -9170,7 +9170,7 @@ function create_if_block_3$3(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "fn i svelte-1eamqdt");
+      attr(span, "class", "fn i svelte-9b7t4d");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -9204,7 +9204,7 @@ function create_if_block_2$6(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "i svelte-1eamqdt");
+      attr(span, "class", "i svelte-9b7t4d");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -9423,7 +9423,7 @@ function create_if_block$a(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "i svelte-1eamqdt");
+      attr(span, "class", "i svelte-9b7t4d");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -10359,7 +10359,7 @@ function create_summary_slot(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "regex svelte-17k1wqt");
+      attr(span, "class", "regex svelte-nzujdl");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -10392,7 +10392,7 @@ function create_preview_slot(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "regex svelte-17k1wqt");
+      attr(span, "class", "regex svelte-nzujdl");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -10826,7 +10826,7 @@ function create_fragment$d(ctx) {
       this.h();
     },
     h() {
-      attr(ul, "class", "svelte-16cw61f");
+      attr(ul, "class", "svelte-oktd6i");
     },
     m(target, anchor) {
       insert_hydration(target, ul, anchor);
@@ -10933,7 +10933,7 @@ function create_each_block_2$1(ctx) {
       this.h();
     },
     h() {
-      attr(th, "class", "svelte-12l2iaz");
+      attr(th, "class", "svelte-6uq8va");
     },
     m(target, anchor) {
       insert_hydration(target, th, anchor);
@@ -10962,7 +10962,7 @@ function create_else_block$4(ctx) {
       this.h();
     },
     h() {
-      attr(td, "class", "svelte-12l2iaz");
+      attr(td, "class", "svelte-6uq8va");
     },
     m(target, anchor) {
       insert_hydration(target, td, anchor);
@@ -10999,7 +10999,7 @@ function create_if_block_2$5(ctx) {
       this.h();
     },
     h() {
-      attr(td, "class", "svelte-12l2iaz");
+      attr(td, "class", "svelte-6uq8va");
     },
     m(target, anchor) {
       insert_hydration(target, td, anchor);
@@ -11050,7 +11050,7 @@ function create_if_block_1$5(ctx) {
       this.h();
     },
     h() {
-      attr(td, "class", "svelte-12l2iaz");
+      attr(td, "class", "svelte-6uq8va");
     },
     m(target, anchor) {
       insert_hydration(target, td, anchor);
@@ -11098,7 +11098,7 @@ function create_if_block$9(ctx) {
       this.h();
     },
     h() {
-      attr(td, "class", "svelte-12l2iaz");
+      attr(td, "class", "svelte-6uq8va");
     },
     m(target, anchor) {
       insert_hydration(target, td, anchor);
@@ -11219,7 +11219,7 @@ function create_each_block$3(ctx) {
       this.h();
     },
     h() {
-      attr(tr, "class", "svelte-12l2iaz");
+      attr(tr, "class", "svelte-6uq8va");
     },
     m(target, anchor) {
       insert_hydration(target, tr, anchor);
@@ -11337,9 +11337,9 @@ function create_fragment$c(ctx) {
       this.h();
     },
     h() {
-      attr(tr, "class", "svelte-12l2iaz");
-      attr(table, "class", "svelte-12l2iaz");
-      attr(div, "class", "table svelte-12l2iaz");
+      attr(tr, "class", "svelte-6uq8va");
+      attr(table, "class", "svelte-6uq8va");
+      attr(div, "class", "table svelte-6uq8va");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -11552,7 +11552,7 @@ function create_if_block_9(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "count svelte-wz5xz8");
+      attr(span, "class", "count svelte-5u42h1");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -11588,7 +11588,7 @@ function create_if_block_8(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "arrow svelte-wz5xz8");
+      attr(div, "class", "arrow svelte-5u42h1");
       toggle_class(div, "expand", !ctx[0].collapsed);
     },
     m(target, anchor) {
@@ -11629,7 +11629,7 @@ function create_if_block_7(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "assert svelte-wz5xz8");
+      attr(span, "class", "assert svelte-5u42h1");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -11837,9 +11837,9 @@ function create_if_block_4(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "arrow svelte-wz5xz8");
+      attr(div, "class", "arrow svelte-5u42h1");
       toggle_class(div, "expand", !ctx[0].collapsed);
-      attr(span, "class", "title svelte-wz5xz8");
+      attr(span, "class", "title svelte-5u42h1");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -11884,7 +11884,7 @@ function create_if_block_3$2(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "info error svelte-wz5xz8");
+      attr(span, "class", "info error svelte-5u42h1");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -11916,7 +11916,7 @@ function create_if_block_2$4(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", "info svelte-wz5xz8");
+      attr(span, "class", "info svelte-5u42h1");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -12003,7 +12003,7 @@ function create_each_block_2(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "outline svelte-wz5xz8");
+      attr(div, "class", "outline svelte-5u42h1");
       set_style(div, "left", ctx[11] * 15 + 15 + "px");
     },
     m(target, anchor) {
@@ -12160,7 +12160,7 @@ function create_if_block$8(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "trace svelte-wz5xz8");
+      attr(div, "class", "trace svelte-5u42h1");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -12340,7 +12340,7 @@ function create_fragment$b(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", div_class_value = "log console-" + ctx[0].level + " svelte-wz5xz8");
+      attr(div, "class", div_class_value = "log console-" + ctx[0].level + " svelte-5u42h1");
       set_style(div, "padding-left", ctx[1] * 15 + "px");
     },
     m(target, anchor) {
@@ -12473,7 +12473,7 @@ function create_fragment$b(ctx) {
         }
         each_blocks.length = each_value_2.length;
       }
-      if (!current || dirty & 1 && div_class_value !== (div_class_value = "log console-" + ctx[0].level + " svelte-wz5xz8")) {
+      if (!current || dirty & 1 && div_class_value !== (div_class_value = "log console-" + ctx[0].level + " svelte-5u42h1")) {
         attr(div, "class", div_class_value);
       }
       if (!current || dirty & 2) {
@@ -12742,7 +12742,7 @@ function create_main_slot$1(ctx) {
     h() {
       attr(iframe_1, "title", "Result");
       attr(iframe_1, "sandbox", iframe_1_sandbox_value = "allow-popups-to-escape-sandbox allow-scripts allow-popups allow-forms allow-pointer-lock allow-top-navigation allow-modals " + (ctx[2] ? "allow-same-origin" : ""));
-      attr(iframe_1, "class", iframe_1_class_value = null_to_empty(ctx[0] || pending || ctx[6] ? "greyed-out" : "") + " svelte-12swy72");
+      attr(iframe_1, "class", iframe_1_class_value = null_to_empty(ctx[0] || pending || ctx[6] ? "greyed-out" : "") + " svelte-16d1sx6");
       attr(iframe_1, "srcdoc", srcdoc);
       toggle_class(iframe_1, "inited", ctx[7]);
       attr(div, "slot", "main");
@@ -12756,7 +12756,7 @@ function create_main_slot$1(ctx) {
       if (dirty & 4 && iframe_1_sandbox_value !== (iframe_1_sandbox_value = "allow-popups-to-escape-sandbox allow-scripts allow-popups allow-forms allow-pointer-lock allow-top-navigation allow-modals " + (ctx2[2] ? "allow-same-origin" : ""))) {
         attr(iframe_1, "sandbox", iframe_1_sandbox_value);
       }
-      if (dirty & 65 && iframe_1_class_value !== (iframe_1_class_value = null_to_empty(ctx2[0] || pending || ctx2[6] ? "greyed-out" : "") + " svelte-12swy72")) {
+      if (dirty & 65 && iframe_1_class_value !== (iframe_1_class_value = null_to_empty(ctx2[0] || pending || ctx2[6] ? "greyed-out" : "") + " svelte-16d1sx6")) {
         attr(iframe_1, "class", iframe_1_class_value);
       }
       if (dirty & 193) {
@@ -12834,7 +12834,7 @@ function create_panel_header_slot(ctx) {
       this.h();
     },
     h() {
-      attr(button, "class", "svelte-12swy72");
+      attr(button, "class", "svelte-16d1sx6");
       attr(div, "slot", "panel-header");
     },
     m(target, anchor) {
@@ -13083,8 +13083,8 @@ function create_fragment$9(ctx) {
       this.h();
     },
     h() {
-      attr(div0, "class", "overlay svelte-12swy72");
-      attr(div1, "class", "iframe-container svelte-12swy72");
+      attr(div0, "class", "overlay svelte-16d1sx6");
+      attr(div1, "class", "iframe-container svelte-16d1sx6");
     },
     m(target, anchor) {
       insert_hydration(target, div1, anchor);
@@ -13772,48 +13772,48 @@ function create_fragment$8(ctx) {
       this.h();
     },
     h() {
-      attr(span0, "class", "key svelte-7lonaj");
+      attr(span0, "class", "key svelte-erc8fk");
       attr(input0, "id", "dom-input");
       attr(input0, "type", "radio");
       input0.__value = "dom";
       input0.value = input0.__value;
-      attr(input0, "class", "svelte-7lonaj");
+      attr(input0, "class", "svelte-erc8fk");
       ctx[3][0].push(input0);
-      attr(span1, "class", "string svelte-7lonaj");
+      attr(span1, "class", "string svelte-erc8fk");
       attr(label0, "for", "dom-input");
-      attr(label0, "class", "svelte-7lonaj");
+      attr(label0, "class", "svelte-erc8fk");
       attr(input1, "id", "ssr-input");
       attr(input1, "type", "radio");
       input1.__value = "ssr";
       input1.value = input1.__value;
-      attr(input1, "class", "svelte-7lonaj");
+      attr(input1, "class", "svelte-erc8fk");
       ctx[3][0].push(input1);
-      attr(span2, "class", "string svelte-7lonaj");
+      attr(span2, "class", "string svelte-erc8fk");
       attr(label1, "for", "ssr-input");
-      attr(label1, "class", "svelte-7lonaj");
-      attr(div0, "class", "option svelte-7lonaj");
-      attr(span3, "class", "key svelte-7lonaj");
-      attr(span4, "class", "boolean svelte-7lonaj");
-      attr(label2, "class", "option svelte-7lonaj");
-      attr(span5, "class", "key svelte-7lonaj");
-      attr(span6, "class", "boolean svelte-7lonaj");
-      attr(label3, "class", "option svelte-7lonaj");
-      attr(span7, "class", "key svelte-7lonaj");
-      attr(span8, "class", "boolean svelte-7lonaj");
-      attr(label4, "class", "option svelte-7lonaj");
-      attr(span9, "class", "key svelte-7lonaj");
-      attr(span10, "class", "boolean svelte-7lonaj");
-      attr(label5, "class", "option svelte-7lonaj");
-      attr(span11, "class", "key svelte-7lonaj");
-      attr(span12, "class", "boolean svelte-7lonaj");
-      attr(label6, "class", "option svelte-7lonaj");
-      attr(span13, "class", "key svelte-7lonaj");
-      attr(span14, "class", "boolean svelte-7lonaj");
-      attr(label7, "class", "option svelte-7lonaj");
-      attr(span15, "class", "key svelte-7lonaj");
-      attr(span16, "class", "boolean svelte-7lonaj");
-      attr(label8, "class", "option svelte-7lonaj");
-      attr(div1, "class", "options svelte-7lonaj");
+      attr(label1, "class", "svelte-erc8fk");
+      attr(div0, "class", "option svelte-erc8fk");
+      attr(span3, "class", "key svelte-erc8fk");
+      attr(span4, "class", "boolean svelte-erc8fk");
+      attr(label2, "class", "option svelte-erc8fk");
+      attr(span5, "class", "key svelte-erc8fk");
+      attr(span6, "class", "boolean svelte-erc8fk");
+      attr(label3, "class", "option svelte-erc8fk");
+      attr(span7, "class", "key svelte-erc8fk");
+      attr(span8, "class", "boolean svelte-erc8fk");
+      attr(label4, "class", "option svelte-erc8fk");
+      attr(span9, "class", "key svelte-erc8fk");
+      attr(span10, "class", "boolean svelte-erc8fk");
+      attr(label5, "class", "option svelte-erc8fk");
+      attr(span11, "class", "key svelte-erc8fk");
+      attr(span12, "class", "boolean svelte-erc8fk");
+      attr(label6, "class", "option svelte-erc8fk");
+      attr(span13, "class", "key svelte-erc8fk");
+      attr(span14, "class", "boolean svelte-erc8fk");
+      attr(label7, "class", "option svelte-erc8fk");
+      attr(span15, "class", "key svelte-erc8fk");
+      attr(span16, "class", "boolean svelte-erc8fk");
+      attr(label8, "class", "option svelte-erc8fk");
+      attr(div1, "class", "options svelte-erc8fk");
     },
     m(target, anchor) {
       insert_hydration(target, div1, anchor);
@@ -14101,7 +14101,7 @@ class CompilerOptions extends SvelteComponent {
   }
 }
 function WorkerWrapper$1() {
-  return new Worker("/web3-repl-deploy/_app/immutable/assets/index.45bb4473.js", {
+  return new Worker("/web3-repl-deploy/_app/immutable/assets/index.90da190f.js", {
     "type": "module"
   });
 }
@@ -14199,7 +14199,7 @@ function create_if_block_2$2(ctx) {
       this.h();
     },
     h() {
-      attr(button, "class", "ast-toggle svelte-8y6rib");
+      attr(button, "class", "ast-toggle svelte-uqygdj");
       toggle_class(button, "open", !ctx[0]);
     },
     m(target, anchor) {
@@ -14244,7 +14244,7 @@ function create_else_block_1$1(ctx) {
       this.h();
     },
     h() {
-      attr(span, "class", span_class_value = "token " + typeof ctx[1] + " svelte-8y6rib");
+      attr(span, "class", span_class_value = "token " + typeof ctx[1] + " svelte-uqygdj");
     },
     m(target, anchor) {
       insert_hydration(target, span, anchor);
@@ -14253,7 +14253,7 @@ function create_else_block_1$1(ctx) {
     p(ctx2, dirty) {
       if (dirty & 2 && t_value !== (t_value = JSON.stringify(ctx2[1]) + ""))
         set_data(t, t_value);
-      if (dirty & 2 && span_class_value !== (span_class_value = "token " + typeof ctx2[1] + " svelte-8y6rib")) {
+      if (dirty & 2 && span_class_value !== (span_class_value = "token " + typeof ctx2[1] + " svelte-uqygdj")) {
         attr(span, "class", span_class_value);
       }
     },
@@ -14385,7 +14385,7 @@ function create_else_block$2(ctx) {
       this.h();
     },
     h() {
-      attr(ul, "class", "svelte-8y6rib");
+      attr(ul, "class", "svelte-uqygdj");
     },
     m(target, anchor) {
       insert_hydration(target, span0, anchor);
@@ -14476,7 +14476,7 @@ function create_if_block_1$2(ctx) {
       this.h();
     },
     h() {
-      attr(button, "class", "preview svelte-8y6rib");
+      attr(button, "class", "preview svelte-uqygdj");
     },
     m(target, anchor) {
       insert_hydration(target, button, anchor);
@@ -14594,7 +14594,7 @@ function create_fragment$7(ctx) {
       this.h();
     },
     h() {
-      attr(li, "class", "svelte-8y6rib");
+      attr(li, "class", "svelte-uqygdj");
       toggle_class(li, "marked", !ctx[10] && ctx[5]);
     },
     m(target, anchor) {
@@ -14857,7 +14857,7 @@ function create_if_block$5(ctx) {
       this.h();
     },
     h() {
-      attr(ul, "class", "svelte-8lioqk");
+      attr(ul, "class", "svelte-jw112v");
     },
     m(target, anchor) {
       insert_hydration(target, ul, anchor);
@@ -14974,9 +14974,9 @@ function create_fragment$6(ctx) {
       this.h();
     },
     h() {
-      attr(code2, "class", "svelte-8lioqk");
-      attr(pre, "class", "svelte-8lioqk");
-      attr(div, "class", "ast-view svelte-8lioqk");
+      attr(code2, "class", "svelte-jw112v");
+      attr(pre, "class", "svelte-jw112v");
+      attr(div, "class", "ast-view svelte-jw112v");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -15146,11 +15146,11 @@ function create_else_block_1(ctx) {
       this.h();
     },
     h() {
-      attr(button0, "class", "svelte-bo3jvb");
+      attr(button0, "class", "svelte-1fpxioj");
       toggle_class(button0, "active", ctx[11] === "result");
-      attr(button1, "class", "svelte-bo3jvb");
+      attr(button1, "class", "svelte-1fpxioj");
       toggle_class(button1, "active", ctx[11] === "js");
-      attr(button2, "class", "svelte-bo3jvb");
+      attr(button2, "class", "svelte-1fpxioj");
       toggle_class(button2, "active", ctx[11] === "css");
     },
     m(target, anchor) {
@@ -15237,7 +15237,7 @@ function create_if_block_2$1(ctx) {
       this.h();
     },
     h() {
-      attr(button, "class", "active svelte-bo3jvb");
+      attr(button, "class", "active svelte-1fpxioj");
     },
     m(target, anchor) {
       insert_hydration(target, button, anchor);
@@ -15269,7 +15269,7 @@ function create_if_block_3(ctx) {
       this.h();
     },
     h() {
-      attr(button, "class", "svelte-bo3jvb");
+      attr(button, "class", "svelte-1fpxioj");
       toggle_class(button, "active", ctx[11] === "ast");
     },
     m(target, anchor) {
@@ -15411,7 +15411,7 @@ function create_main_slot(ctx) {
     },
     h() {
       attr(div, "slot", "main");
-      attr(div, "class", "svelte-bo3jvb");
+      attr(div, "class", "svelte-1fpxioj");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -15464,7 +15464,7 @@ function create_panel_body_slot(ctx) {
     },
     h() {
       attr(div, "slot", "panel-body");
-      attr(div, "class", "svelte-bo3jvb");
+      attr(div, "class", "svelte-1fpxioj");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -15517,7 +15517,7 @@ function create_if_block$4(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "tab-content svelte-bo3jvb");
+      attr(div, "class", "tab-content svelte-1fpxioj");
       toggle_class(div, "visible", ctx[12] !== "md" && ctx[11] === "ast");
     },
     m(target, anchor) {
@@ -15730,17 +15730,17 @@ function create_fragment$5(ctx) {
       this.h();
     },
     h() {
-      attr(div0, "class", "view-toggle svelte-bo3jvb");
-      attr(div1, "class", "tab-content svelte-bo3jvb");
+      attr(div0, "class", "view-toggle svelte-1fpxioj");
+      attr(div1, "class", "tab-content svelte-1fpxioj");
       toggle_class(div1, "visible", ctx[12] !== "md" && ctx[11] === "result");
-      attr(div2, "class", "tab-content svelte-bo3jvb");
+      attr(div2, "class", "tab-content svelte-1fpxioj");
       toggle_class(div2, "visible", ctx[12] !== "md" && ctx[11] === "js");
-      attr(div3, "class", "tab-content svelte-bo3jvb");
+      attr(div3, "class", "tab-content svelte-1fpxioj");
       toggle_class(div3, "visible", ctx[12] !== "md" && ctx[11] === "css");
       attr(iframe, "title", "Markdown");
       attr(iframe, "srcdoc", ctx[13]);
-      attr(iframe, "class", "svelte-bo3jvb");
-      attr(div4, "class", "tab-content svelte-bo3jvb");
+      attr(iframe, "class", "svelte-1fpxioj");
+      attr(div4, "class", "tab-content svelte-1fpxioj");
       toggle_class(div4, "visible", ctx[12] === "md");
     },
     m(target, anchor) {
@@ -16044,7 +16044,7 @@ class Output extends SvelteComponent {
   }
 }
 function WorkerWrapper() {
-  return new Worker("/web3-repl-deploy/_app/immutable/assets/index.8a3f1b0a.js", {
+  return new Worker("/web3-repl-deploy/_app/immutable/assets/index.cb693e92.js", {
     "type": "module"
   });
 }
@@ -16332,9 +16332,9 @@ function create_fragment$4(ctx) {
       this.h();
     },
     h() {
-      attr(div0, "class", "viewport svelte-12gl4sr");
+      attr(div0, "class", "viewport svelte-1k9jy47");
       toggle_class(div0, "output", ctx[13]);
-      attr(div1, "class", "container svelte-12gl4sr");
+      attr(div1, "class", "container svelte-1k9jy47");
       add_render_callback(() => ctx[36].call(div1));
       toggle_class(div1, "toggleable", ctx[16]);
     },
@@ -19289,7 +19289,7 @@ function create_catch_block(ctx) {
       add_render_callback(() => {
         if (p_outro)
           p_outro.end(1);
-        p_intro = create_in_transition(p, fly, ctx[3]);
+        p_intro = create_in_transition(p, fly, ctx[2]);
         p_intro.start();
       });
       current = true;
@@ -19297,7 +19297,7 @@ function create_catch_block(ctx) {
     o(local) {
       if (p_intro)
         p_intro.invalidate();
-      p_outro = create_out_transition(p, fly, ctx[4]);
+      p_outro = create_out_transition(p, fly, ctx[3]);
       current = false;
     },
     d(detaching) {
@@ -19326,20 +19326,19 @@ function create_then_block(ctx) {
   let t8;
   let p_intro;
   let p_outro;
-  let style_height = `${ctx[2]}px`;
   let current;
   return {
     c() {
       p = element("p");
-      t0 = text("\u2714\uFE0F Saved ");
+      t0 = text("\u2714\uFE0F Deployed ");
       t1 = text(ctx[1]);
-      t2 = text(" [");
+      t2 = text(" on ");
       a0 = element("a");
-      t3 = text("Cloudflare");
-      t4 = text("] | [");
+      t3 = text("DWeb");
+      t4 = text(" &\r\n		");
       a1 = element("a");
-      t5 = text("DWeb.Link\r\n		");
-      t6 = text("] (");
+      t5 = text("DAGWeb");
+      t6 = text("\r\n		(");
       a2 = element("a");
       t7 = text("Gateway?");
       t8 = text(")");
@@ -19348,19 +19347,19 @@ function create_then_block(ctx) {
     l(nodes) {
       p = claim_element(nodes, "P", {});
       var p_nodes = children(p);
-      t0 = claim_text(p_nodes, "\u2714\uFE0F Saved ");
+      t0 = claim_text(p_nodes, "\u2714\uFE0F Deployed ");
       t1 = claim_text(p_nodes, ctx[1]);
-      t2 = claim_text(p_nodes, " [");
+      t2 = claim_text(p_nodes, " on ");
       a0 = claim_element(p_nodes, "A", { href: true, target: true });
       var a0_nodes = children(a0);
-      t3 = claim_text(a0_nodes, "Cloudflare");
+      t3 = claim_text(a0_nodes, "DWeb");
       a0_nodes.forEach(detach);
-      t4 = claim_text(p_nodes, "] | [");
+      t4 = claim_text(p_nodes, " &\r\n		");
       a1 = claim_element(p_nodes, "A", { href: true, target: true });
       var a1_nodes = children(a1);
-      t5 = claim_text(a1_nodes, "DWeb.Link\r\n		");
+      t5 = claim_text(a1_nodes, "DAGWeb");
       a1_nodes.forEach(detach);
-      t6 = claim_text(p_nodes, "] (");
+      t6 = claim_text(p_nodes, "\r\n		(");
       a2 = claim_element(p_nodes, "A", { href: true, target: true });
       var a2_nodes = children(a2);
       t7 = claim_text(a2_nodes, "Gateway?");
@@ -19370,13 +19369,12 @@ function create_then_block(ctx) {
       this.h();
     },
     h() {
-      attr(a0, "href", a0_href_value = ctx[5](ctx[8]));
+      attr(a0, "href", a0_href_value = ctx[4](ctx[8]));
       attr(a0, "target", "_blank");
-      attr(a1, "href", a1_href_value = ctx[6](ctx[8]));
+      attr(a1, "href", a1_href_value = ctx[5](ctx[8]));
       attr(a1, "target", "_blank");
       attr(a2, "href", "https://ipfs.github.io/public-gateway-checker/");
       attr(a2, "target", "_blank");
-      set_style(p, "height", style_height, false);
     },
     m(target, anchor) {
       insert_hydration(target, p, anchor);
@@ -19398,14 +19396,11 @@ function create_then_block(ctx) {
       ctx = new_ctx;
       if (!current || dirty & 2)
         set_data(t1, ctx[1]);
-      if (!current || dirty & 1 && a0_href_value !== (a0_href_value = ctx[5](ctx[8]))) {
+      if (!current || dirty & 1 && a0_href_value !== (a0_href_value = ctx[4](ctx[8]))) {
         attr(a0, "href", a0_href_value);
       }
-      if (!current || dirty & 1 && a1_href_value !== (a1_href_value = ctx[6](ctx[8]))) {
+      if (!current || dirty & 1 && a1_href_value !== (a1_href_value = ctx[5](ctx[8]))) {
         attr(a1, "href", a1_href_value);
-      }
-      if (dirty & 4 && style_height !== (style_height = `${ctx[2]}px`)) {
-        set_style(p, "height", style_height, false);
       }
     },
     i(local) {
@@ -19414,7 +19409,7 @@ function create_then_block(ctx) {
       add_render_callback(() => {
         if (p_outro)
           p_outro.end(1);
-        p_intro = create_in_transition(p, fly, ctx[3]);
+        p_intro = create_in_transition(p, fly, ctx[2]);
         p_intro.start();
       });
       current = true;
@@ -19422,7 +19417,7 @@ function create_then_block(ctx) {
     o(local) {
       if (p_intro)
         p_intro.invalidate();
-      p_outro = create_out_transition(p, fly, ctx[4]);
+      p_outro = create_out_transition(p, fly, ctx[3]);
       current = false;
     },
     d(detaching) {
@@ -19438,23 +19433,17 @@ function create_pending_block(ctx) {
   let t;
   let p_intro;
   let p_outro;
-  let style_height = `${ctx[2]}px`;
   let current;
   return {
     c() {
       p = element("p");
       t = text("Loading IPFS...");
-      this.h();
     },
     l(nodes) {
       p = claim_element(nodes, "P", {});
       var p_nodes = children(p);
       t = claim_text(p_nodes, "Loading IPFS...");
       p_nodes.forEach(detach);
-      this.h();
-    },
-    h() {
-      set_style(p, "height", style_height, false);
     },
     m(target, anchor) {
       insert_hydration(target, p, anchor);
@@ -19463,9 +19452,6 @@ function create_pending_block(ctx) {
     },
     p(new_ctx, dirty) {
       ctx = new_ctx;
-      if (dirty & 4 && style_height !== (style_height = `${ctx[2]}px`)) {
-        set_style(p, "height", style_height, false);
-      }
     },
     i(local) {
       if (current)
@@ -19473,7 +19459,7 @@ function create_pending_block(ctx) {
       add_render_callback(() => {
         if (p_outro)
           p_outro.end(1);
-        p_intro = create_in_transition(p, fly, ctx[3]);
+        p_intro = create_in_transition(p, fly, ctx[2]);
         p_intro.start();
       });
       current = true;
@@ -19481,7 +19467,7 @@ function create_pending_block(ctx) {
     o(local) {
       if (p_intro)
         p_intro.invalidate();
-      p_outro = create_out_transition(p, fly, ctx[4]);
+      p_outro = create_out_transition(p, fly, ctx[3]);
       current = false;
     },
     d(detaching) {
@@ -19576,7 +19562,7 @@ function instance$3($$self, $$props, $$invalidate) {
     opacity: 0.5,
     easing: identity$3
   };
-  const cfUrl = (cid) => `https://${cid == null ? void 0 : cid.toV1().toString()}.ipfs.cf-ipfs.com/`;
+  const dwebUrl = (cid) => `http://${cid == null ? void 0 : cid.toV1().toString()}.ipfs.dweb.link/`;
   const dwebDag = (cid) => `https://dweb.link/api/v0/dag/get?arg=${cid == null ? void 0 : cid.toV1().toString()}`;
   $$self.$$set = ($$props2) => {
     if ("saveResult" in $$props2)
@@ -19584,14 +19570,14 @@ function instance$3($$self, $$props, $$invalidate) {
     if ("description" in $$props2)
       $$invalidate(1, description = $$props2.description);
     if ("height" in $$props2)
-      $$invalidate(2, height = $$props2.height);
+      $$invalidate(6, height = $$props2.height);
   };
-  return [saveResult, description, height, flyIn, flyOut, cfUrl, dwebDag];
+  return [saveResult, description, flyIn, flyOut, dwebUrl, dwebDag, height];
 }
 class IPFSSaveStatus extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$3, create_fragment$3, safe_not_equal, { saveResult: 0, description: 1, height: 2 });
+    init(this, options, instance$3, create_fragment$3, safe_not_equal, { saveResult: 0, description: 1, height: 6 });
   }
 }
 var IPFSSaver_svelte_svelte_type_style_lang = "";
@@ -19705,7 +19691,6 @@ function create_fragment$2(ctx) {
   let div;
   let t0;
   let t1;
-  let style_height = `${ctx[0] * 2}px`;
   let current;
   let if_block0 = !ctx[3] && create_if_block_2();
   let if_block1 = ctx[1] && create_if_block_1(ctx);
@@ -19738,8 +19723,7 @@ function create_fragment$2(ctx) {
       this.h();
     },
     h() {
-      attr(div, "class", "inner svelte-v3b91g");
-      set_style(div, "height", style_height, false);
+      attr(div, "class", "inner svelte-1ef4qd8");
     },
     m(target, anchor) {
       insert_hydration(target, div, anchor);
@@ -19803,9 +19787,6 @@ function create_fragment$2(ctx) {
           if_block2 = null;
         });
         check_outros();
-      }
-      if (dirty & 1 && style_height !== (style_height = `${ctx2[0] * 2}px`)) {
-        set_style(div, "height", style_height, false);
       }
     },
     i(local) {
@@ -19891,45 +19872,89 @@ class IPFSSaver extends SvelteComponent {
   }
 }
 const code_0 = `---
-title: Frontmatter can be used
 author: Doug Anderson (@douganderson444)
 
 ---
 
 <script>
-	import { editable } from 'https://cdn.jsdelivr.net/gh/douganderson444/svelte-editable-action@latest/src/lib/editable.js'
-		
-	export let name = 'Darik';
-	let editText = 'Go ahead and edit me'
+  import { editable } from  '@douganderson444/svelte-editable-action@latest'
+	import List from '@douganderson444/listavelte@0.1.6'
+	import Changable from './Changable.svelte'
+	
+	export let name = 'Douglas';
+	export let lastName = 'Anders'
+	
+	export let editableTitle = 'Click to edit My first Template'
+	export let fancyEditText = 'Click me to fancy edit, watch me update'
+	
+	const makeProp = varObj => ({ key: Object.keys(varObj)[0], value: varObj[Object.keys(varObj)[0]]})
+
 <\/script>
 
-<h1>{title}</h1>
+<h1>
+<Changable prop={makeProp({editableTitle})} on:change={e=>console.log(e.detail)}></Changable> {name} {lastName}
+</h1>
 
-# What can you write {name}?
-
-## Markdown Syntax works
-
-### Make text Smaller by adding #s
-
-<div use:editable on:change={e=>console.log(e)}>
-	{editText}
+<div use:editable on:change={(e) => fancyEditText = e.detail } >
+	<h2>{fancyEditText}</h2>
 </div>
 
-{editText}
+### Markdown Syntax works
+
+#### Let's import a TODO Component:
+
+<!-- use on:change to pass the properies up to the parent component -->
+<List on:change></List>
 
 _Written by:_
 
 {author}
 
 <style>
-	h1 {
-		color: red;
+	:root {
+		background-color: #fafafa;	
 	}
+
 	
 	h2 {
 		color: blue
 	}
+		
+	h4 {
+		color: green
+	}
+	h1 {
+		color: red;
+		font-family: 'Luckiest Guy', sans-serif;
+		text-transform: uppercase;
+	}
+
+	@font-face {
+		font-family: 'Luckiest Guy';
+		font-style: normal;
+		font-weight: 400;
+		src: url(https://fonts.gstatic.com/s/luckiestguy/v17/_gP_1RrxsjcxVyin9l9n_j2hTd52.woff2)
+			format('woff2');
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+			U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
 </style>
+`;
+const code_1 = `<script>
+	import { createEventDispatcher } from 'svelte';
+	const dispatch = createEventDispatcher();
+	
+	// pass in the item you want to monitor changes on
+	export let prop = { 
+		key: 'editableTitle', 
+		value: 'Some content to change' 
+	}
+	// dispatch the change event when the content is edited
+	$: if (prop.value) dispatch('change', { [prop.key]: prop.value });
+
+<\/script>
+
+<span contenteditable bind:textContent={prop.value}></span>
 `;
 var App_svelte_svelte_type_style_lang = "";
 function create_if_block$1(ctx) {
@@ -20026,10 +20051,10 @@ function create_fragment$1(ctx) {
       this.h();
     },
     h() {
-      attr(div0, "class", "top-half svelte-9fjk50");
-      attr(div1, "class", "bottom-half svelte-9fjk50");
-      attr(div2, "class", "contain svelte-9fjk50");
-      attr(div3, "class", "main svelte-9fjk50");
+      attr(div0, "class", "top-half svelte-1szyf34");
+      attr(div1, "class", "bottom-half svelte-1szyf34");
+      attr(div2, "class", "contain svelte-1szyf34");
+      attr(div3, "class", "main svelte-1szyf34");
     },
     m(target, anchor) {
       insert_hydration(target, div3, anchor);
@@ -20088,14 +20113,28 @@ function create_fragment$1(ctx) {
   };
 }
 function instance$1($$self, $$props, $$invalidate) {
-  let { components = [{ name: "App", type: "svx", source: code_0 }] } = $$props;
+  let { components = [
+    { name: "App", type: "svx", source: code_0 },
+    {
+      name: "Changable",
+      type: "svelte",
+      source: code_1
+    }
+  ] } = $$props;
   let repl;
   let compiled;
+  let timeoutID;
   onMount(() => {
     repl.set({ components });
   });
   function handleCompiled(e) {
-    $$invalidate(2, { compiled, components } = e.detail, compiled, $$invalidate(0, components));
+    if (timeoutID) {
+      clearTimeout(timeoutID);
+    }
+    timeoutID = setTimeout(async () => {
+      timeoutID = 0;
+      $$invalidate(2, { compiled, components } = e.detail, compiled, $$invalidate(0, components));
+    }, 5e3);
   }
   function repl_1_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](() => {
@@ -20232,7 +20271,14 @@ function instance($$self, $$props, $$invalidate) {
     if (cache) {
       $$invalidate(0, components = JSON.parse(cache));
     } else {
-      $$invalidate(0, components = [{ name: "App", type: "svx", source: code_0 }]);
+      $$invalidate(0, components = [
+        { name: "App", type: "svx", source: code_0 },
+        {
+          name: "Changable",
+          type: "svelte",
+          source: code_1
+        }
+      ]);
     }
   });
   function app_components_binding(value) {
@@ -20255,4 +20301,4 @@ class Routes extends SvelteComponent {
   }
 }
 export { Routes, commonjsGlobal };
-//# sourceMappingURL=index-7efce994.js.map
+//# sourceMappingURL=index-cee35d39.js.map

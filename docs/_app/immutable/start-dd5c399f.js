@@ -739,10 +739,10 @@ class Root extends SvelteComponent {
 }
 const matchers = {};
 const components = [
-  () => __vitePreload(() => import("./pages/__layout.svelte-bcf893fc.js"), true ? ["pages/__layout.svelte-bcf893fc.js","assets/pages/__layout.svelte-c3f5dd9d.css","chunks/index-7afc149e.js"] : void 0),
+  () => __vitePreload(() => import("./pages/__layout.svelte-7ebda68e.js"), true ? ["pages/__layout.svelte-7ebda68e.js","assets/pages/__layout.svelte-ffd7c0cf.css","chunks/index-7afc149e.js"] : void 0),
   () => __vitePreload(() => import("./error.svelte-c29d55e9.js"), true ? ["error.svelte-c29d55e9.js","chunks/index-7afc149e.js"] : void 0),
-  () => __vitePreload(() => import("./pages/about.svelte-919ca9bc.js"), true ? ["pages/about.svelte-919ca9bc.js","assets/pages/about.svelte-4db5be0d.css","chunks/index-7afc149e.js"] : void 0),
-  () => __vitePreload(() => import("./pages/index.svelte-a6c0defa.js"), true ? ["pages/index.svelte-a6c0defa.js","chunks/index-7afc149e.js","chunks/index-7efce994.js","assets/index-7e9e90dd.css","chunks/preload-helper-42b4c6f2.js"] : void 0)
+  () => __vitePreload(() => import("./pages/about.svelte-d07e5e5d.js"), true ? ["pages/about.svelte-d07e5e5d.js","assets/pages/about.svelte-bcc3062e.css","chunks/index-7afc149e.js"] : void 0),
+  () => __vitePreload(() => import("./pages/index.svelte-3f38eb07.js"), true ? ["pages/index.svelte-3f38eb07.js","chunks/index-7afc149e.js","chunks/index-cee35d39.js","assets/index-2464a55f.css","chunks/preload-helper-42b4c6f2.js"] : void 0)
 ];
 const dictionary = {
   "": [[0, 3], [1]],
@@ -849,7 +849,7 @@ function notifiable_store(value) {
 }
 function create_updated_store() {
   const { set, subscribe } = writable(false);
-  const initial = "1654557898943";
+  const initial = "1655468426866";
   let timeout;
   async function check() {
     clearTimeout(timeout);
@@ -1839,4 +1839,4 @@ async function start({ paths, target, session, route, spa, trailing_slash, hydra
   dispatchEvent(new CustomEvent("sveltekit:start"));
 }
 export { start };
-//# sourceMappingURL=start-62609b5d.js.map
+//# sourceMappingURL=start-dd5c399f.js.map
