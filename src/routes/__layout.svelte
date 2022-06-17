@@ -1,7 +1,5 @@
 <script>
 	import '../app.css';
-	import '@sveltejs/site-kit/base.css';
-	import '@sveltejs/site-kit/code.css';
 </script>
 
 <main>
@@ -13,6 +11,21 @@
 </main>
 
 <style>
+	:root {
+		--back: #ffffff;
+		--back-light: #f6fafd;
+		--back-api: #e5eef5;
+		--prime: #ff3e00;
+		--second: #676778;
+		--flash: #40b3ff;
+		--highlight: #ffff82;
+		--heading: #222;
+		--text: #444;
+		--second-text: #7b7766;
+		--sidebar-text: rgba(255, 255, 255, 0.9);
+		--border-w: 0.3rem; /* border-width  */
+		--border-r: 0.4rem; /* border-radius */
+	}
 	main {
 		display: flex;
 		flex-direction: column;
