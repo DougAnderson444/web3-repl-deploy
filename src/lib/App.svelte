@@ -10,11 +10,17 @@
 			name: 'App',
 			type: 'svx',
 			source: code_0
+		},
+		{
+			name: 'Changable',
+			type: 'svelte',
+			source: code_1
 		}
 	];
 
 	let repl;
 	let compiled;
+	let timeoutID;
 
 	onMount(() => {
 		repl.set({
@@ -23,9 +29,17 @@
 	});
 
 	function handleCompiled(e) {
-		// components is an array
-		// compiled is a string...
-		({ compiled, components } = e.detail);
+		if (timeoutID) {
+			clearTimeout(timeoutID); // cancel any exisitng waiting
+		}
+		// rate limit sending to IPFS so we don't overload the server with requests
+
+		timeoutID = setTimeout(async () => {
+			timeoutID = 0;
+			// components is an array
+			// compiled is a string...
+			({ compiled, components } = e.detail);
+		}, 5000);
 	}
 </script>
 
