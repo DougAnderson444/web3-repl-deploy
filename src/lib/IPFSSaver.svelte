@@ -70,7 +70,7 @@
 	$: content && saveContent && saveContent();
 </script>
 
-<div class="inner" style:height="{height * 2}px">
+<div class="inner">
 	{#if !ipfsNode}
 		Loading IPFS, please wait...
 	{/if}
@@ -86,8 +86,11 @@
 </div>
 
 <style>
+	@tailwind base;
+	@tailwind components;
+	/* @tailwind utilities; */
+
 	.inner {
 		overflow: hidden;
-		max-height: var(--height);
 	}
 </style>

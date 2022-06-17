@@ -15,15 +15,13 @@
 
 {#await saveResult}
 	<!-- promise is pending -->
-	<p in:fly={flyIn} out:fly={flyOut} style:height="{height}px">Loading IPFS...</p>
+	<p in:fly={flyIn} out:fly={flyOut}>Loading IPFS...</p>
 {:then result}
 	<!-- promise was fulfilled -->
-	<p in:fly={flyIn} out:fly={flyOut} style:height="{height}px">
-		✔️ Saved {description} [<a href={cfUrl(result)} target="_blank">Cloudflare</a>] | [<a
-			href={dwebDag(result)}
-			target="_blank"
-			>DWeb.Link
-		</a>] (<a href="https://ipfs.github.io/public-gateway-checker/" target="_blank">Gateway?</a>)
+	<p in:fly={flyIn} out:fly={flyOut}>
+		✔️ Deployed {description} on <a href={dwebUrl(result)} target="_blank">DWeb</a> &
+		<a href={dwebDag(result)} target="_blank">DAGWeb </a>
+		(<a href="https://ipfs.github.io/public-gateway-checker/" target="_blank">Gateway?</a>)
 	</p>
 {:catch error}
 	<!-- promise was rejected -->
